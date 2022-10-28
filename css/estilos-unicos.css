@@ -8,89 +8,39 @@
 
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+/* branch Matias */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap'); */
 
 
 
-body {
-	padding: 0px;
-	margin: 0px;
+*{
+	padding: 0;
+	margin: 0;
 	box-sizing: border-box;
 }
 
-.navbar nav li{
-font-weight: 300;
-font-size: 16 px;
-font-family: roboto, "sans serif";
-color: #F8F8F8;
-display: inline;
-text-align: center;
-padding-top: 10px;
+body {
+	background-color: #F8F8F8;
 }
 
-.navbar nav{
+.header{
 	background-color: #3FA796;
-	width: 100%;
-	height: 90px;
-}
-
-h3{
-	font-size: 162%;
-	padding-top: 1px;
-	margin-bottom: 21px;
-	line-height: 13%;
-}
-h4{
-	text-align: right;
-	background-color: #3FA796;	
-}
-
-.presentacion{
-	text-align: center;
-	font-size: 2em;
-}
-.noticia1, .noticia2, .noticia3, .noticia4 {
 	display: flex;
-	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
-	padding-left: 17px;
-}	
-.texto1, .texto2, .texto3, .texto4 {
-	background-color: #3FA796;
-	color: #FDFBFB;
-	border-bottom-right-radius: 30px;
-	border-bottom-left-radius: 30px;
-	padding-top: 6px;
-	margin-top: -5px;
-	text-align: center;
-	font-size: 112%;
-	line-height: 93%;
-	padding-right: 21px;
-	padding-left: 24px;
-	padding-bottom: 11px;
+	height: 85px;
+	padding: 5px 10%;
 }
 
-img {
-	border-top-right-radius: 30px;
-	border-top-left-radius: 30px;
-}
-.texto1 p{
-	font-size: 102%;
-}
-.variasnoticias{
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	padding-left: 12px;
-	margin-left: 10px;
+
 }
 
-h2 {
-	font-size: 48px;
-	padding-top: 1px;
-	font-family: ubuntu;
-}
+.header .logo img{
+	height: 50px;
+	width: auto;
+} 
 
 
 .presentacion {
@@ -106,43 +56,6 @@ h2 {
 	text-align: center;
 	font-weight: 300;
  
-}
-
-.container1 {
-	width: 538px;
-	height: 468px;
-	display: flex;
-	flex-direction: column;
-	float: left;
-	margin-left: 30px;
-	
-}
-.container1 p {
-	color: white;
-}
-
-.buscador {
-	height: 46px;
-	width: 502px;
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-	border-radius: 10px;
-}
-
-.mapa {
-	display: flex;
-	padding-top: 60px;
-}
-
-img {
-	border-radius: 20px;
-}
-
-.cointainer2 {
-	display: flex;
-	flex-direction: column;
-	float: right;
 }
 
 h1 {
@@ -272,109 +185,20 @@ h3 {
 	font-weight: 700;
 	padding-bottom: 32px;
 }
+=======
+.header nav .list li:hover{
+	color: #6a5499;
+}
 
-h4 {
-    font-family: roboto, 'sans serif';
-    font-size: 28px;
-	color: #F8F8F8;
-	text-align: center;
+
+.header .btn button{
 	font-weight: 700;
-}
-
-p {
-    font-family: roboto, 'sans serif';
-    font-size: 20px;
 	color: #F8F8F8;
-	text-align: center;
-	font-weight: 300;
-	padding-bottom: 64px;
-}
-
-.seccion_uno {
-    background-color: #3FA796;
-    padding: 98px 250px 96px 250px;
-    text-align: center;
-}
-
-.contenedores_violetas {
-	display: flex;
-	justify-content: flex-start;
-	align-content: flex-start;
-	flex-wrap: nowrap;
-	align-items: flex-start;
-}
-
-.contenedor_uno {
-background-color: #8267BE;
-margin: 0px 86px 50px 150px;
-padding-top: 126px;
-width: 280px;
-height: 120px;
-border-radius: 37px;
-}
-
-.contenedor_dos {
 	background-color: #8267BE;
-	margin: 0px 150px 50px 0px;
-	padding-top: 126px;
-	width: 280px;
-	height: 120px;
-	border-radius: 37px;
-	}
-
-.seccion-dos {
-font-family: ubuntu, 'sans serif'; 
-font-size: 48px;
-color:#1E1E1E;
-text-align: center;
-font-weight: 700;
-padding-top: 98px;
-
-}
-
-.caja-uno {
-background-color: #8267BE;
-margin: 0px 18px 50px 30px;
-padding-top: 64px;
-width: 681px;
-height: 180px;
-border-radius: 44px;
-}
-
-.caja-dos {
-	background-color: #8267BE;
-	margin: 0px 18px 50px 30px;
-	padding-top: 64px;
-	width: 681px;
-	height: 180px;
-	border-radius: 44px;
-}
-
-.caja-tres {
-	background-color: #8267BE;
-	margin: 0px 18px 50px 30px;
-	padding-top: 64px;
-	width: 681px;
-	height: 180px;
-	border-radius: 44px;	
-}
-
-.caja-cuatro {
-	background-color: #8267BE;
-	margin: 0px 18px 50px 30px;
-	padding-top: 64px;
-	width: 681px;
-	height: 180px;
-	border-radius: 44px;
-}
-
-.subtitulo-caja4 {
-	background-color: #8267BE;
-	margin: 50px 18px 50px 30px;
-	padding-top: 64px;
-	width: 678px;
-	height: 690px;
-	border-radius: 44px;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 10px;
+	cursor: pointer;
 }
 
 
