@@ -87,10 +87,8 @@ img {
 }
 
 h2 {
-	font-size: 100%;
+	font-size: 48px;
 	padding-top: 1px;
-	margin-bottom: 21px;
-	line-height: 13%;
 	font-family: ubuntu;
 }
 
@@ -99,11 +97,15 @@ h2 {
 	text-align: center;
 	font-size: 2em;
 	color: white;
+
 }
 
 .presentacion p {
 	font-size: 20px;
-	padding-top: 10px;
+	padding-top: 5px;
+	text-align: center;
+	font-weight: 300;
+ 
 }
 
 .container1 {
@@ -147,6 +149,7 @@ h1 {
 	font-size: 20px;
 	font-family: ubuntu;
 	color: white;
+	font-weight: 400;
 }
 
 .formulario {
@@ -158,7 +161,7 @@ h1 {
 form {
   /* Centrar el formulario en la página */
   margin: 0 auto;
-  width: 600px;
+  width: 606px;
   /* Esquema del formulario */
   padding: 1em;
 }
@@ -176,18 +179,19 @@ form li + li {
 label {
   /* Tamaño y alineación uniforme */
   display: inline-block;
+  padding-bottom: 5px;
   width: 600px;
   text-align:inherit;
   font-size: 15px;
   color: white;
 }
 
-input, textarea {
+input,
+textarea {
   /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
      Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
   font: 1em roboto;
-  height: 40px;
-
+  height: 35px;
   /* Tamaño uniforme del campo de texto */
   box-sizing: border-box;
   border-radius: 5px;
@@ -202,6 +206,47 @@ input, textarea, select, button {
   margin: 0;
   box-sizing: border-box;
 }
+
+li label {
+	font-size: 20px;
+	font-family: "Roboto";
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+.checkbox{
+	width: 14px;
+	height: 14px;
+	background-color: transparent;
+	color: transparent;
+	border-style: hidden;
+
+}
+
+ul a li {
+	width: 109px;
+	height: 40px;
+	background-color: #8267BE;
+	border: none;
+	border-radius: 10px;
+	text-align:center;
+	display: inline;
+	padding: 10px 10px;
+}
+
+ul a {
+	text-decoration: none;
+	font-size: 14px;
+	color: white;
+}
+
+#name,#CUIT,#lugar,#entrecalles,#barrio,#localidad,#partido,#pregunta,#descrip {
+	font-size: 14px;
+	color: #9E9E9E;
+	padding: 5px;
+}
+
+
 
 
 *{
