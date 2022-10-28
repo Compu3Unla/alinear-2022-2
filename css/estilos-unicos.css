@@ -34,8 +34,7 @@ body {
 	padding: 5px 10%;
 }
 
-.header .logo{
-	cursor: pointer;
+
 }
 
 .header .logo img{
@@ -43,34 +42,154 @@ body {
 	width: auto;
 } 
 
-.header .logo img:hover{
-	transform: scale(1.1);
+
+.presentacion {
+	text-align: center;
+	font-size: 2em;
+	color: white;
+
 }
 
-.header .logo img:hover{
-	color: #8267BE;
-}
-.header nav .list{
-	list-style: none;	 
+.presentacion p {
+	font-size: 20px;
+	padding-top: 5px;
+	text-align: center;
+	font-weight: 300;
+ 
 }
 
-.header nav .list li{
-	display: inline-block;
-	padding: 0 20px;
-	font-family: roboto;
+h1 {
+	font-size: 20px;
+	font-family: ubuntu;
+	color: white;
 	font-weight: 400;
+}
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+  width: 606px;
+  /* Esquema del formulario */
+  padding: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  padding-bottom: 5px;
+  width: 600px;
+  text-align:inherit;
+  font-size: 15px;
+  color: white;
+}
+
+input,
+textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 1em roboto;
+  height: 35px;
+  /* Tamaño uniforme del campo de texto */
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px #FFFFFF;
+}
+
+input, textarea, select, button {
+  width : 600px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li label {
+	font-size: 20px;
+	font-family: "Roboto";
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+.checkbox{
+	width: 14px;
+	height: 14px;
+	background-color: transparent;
+	color: transparent;
+	border-style: hidden;
+
+}
+
+ul a li {
+	width: 109px;
+	height: 40px;
+	background-color: #8267BE;
+	border: none;
+	border-radius: 10px;
+	text-align:center;
+	display: inline;
+	padding: 10px 10px;
+}
+
+ul a {
+	text-decoration: none;
+	font-size: 14px;
+	color: white;
+}
+
+#name,#CUIT,#lugar,#entrecalles,#barrio,#localidad,#partido,#pregunta,#descrip {
+	font-size: 14px;
+	color: #9E9E9E;
+	padding: 5px;
+}
+
+
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+
+h2 {
+    font-family: ubuntu, 'sans serif'; 
+    font-size: 48px;
 	color: #F8F8F8;
+	text-align: center;
+	font-weight: 700;
+	padding-bottom: 32px;
 }
 
-.header nav .list li:hover{
-transform: scale(1.1);
-
+h3 {
+    font-family: roboto, 'sans serif';
+    font-size: 32px;
+	color: #F8F8F8;
+	text-align: center;
+	font-weight: 700;
+	padding-bottom: 32px;
 }
-
+=======
 .header nav .list li:hover{
 	color: #6a5499;
-	
-	}
+}
+
 
 .header .btn button{
 	font-weight: 700;
