@@ -1,4 +1,3 @@
-
 /* 
 ----PALETA DE COLORES----
 |	verde: #3FA796	    |
@@ -35,28 +34,11 @@ body {
 }
 
 
-}
-
 .header .logo img{
 	height: 50px;
 	width: auto;
 } 
 
-
-.presentacion {
-	text-align: center;
-	font-size: 2em;
-	color: white;
-
-}
-
-.presentacion p {
-	font-size: 20px;
-	padding-top: 5px;
-	text-align: center;
-	font-weight: 300;
- 
-}
 
 h1 {
 	font-size: 20px;
@@ -64,6 +46,117 @@ h1 {
 	color: white;
 	font-weight: 400;
 }
+
+
+
+
+/*----------------Novedades--------------*/
+.presentacion h2 {
+	text-align: center;
+	color: #000000;
+	font-size: 48px;
+}
+.presentacion p{
+	font-size: 20px;
+	line-height: 24px;
+}
+.container p{
+	color: #FFFFFF;
+	font-size: 16px;
+}
+.container h4{
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.container .swiper-container{
+	width: 100%;
+	margin-left: 26px;
+	padding-left: 66px;
+}
+.container .swiper-slide {
+	position: relative;
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+	padding-left: 0px;
+	bottom: 75px;
+	width: 325%;
+}
+.container .swiper-slide img{
+	display: block;
+	width: 97%;
+	height: 256px;
+	object-fit: cover;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.container .swiper-slide .card-description{
+	padding-top: 1%;
+	padding-right: 8%;
+	padding-left: 10%;
+	background-color: #3FA796;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	padding-bottom: 19px;
+	width: 97%;
+}
+.container .swiper-slide .card-title,.container .swiper-slide .card-text{
+	padding-bottom: 11px;
+	padding-right: 23px;
+	padding-left: 20px;
+	padding-top: 0px;
+	margin-bottom: 22px;
+}
+.presentacion{
+	text-align: center;
+	font-size: 182%;
+	margin-top: 91px;
+	margin-bottom: 137px;
+}
+
+
+.container a{
+	padding: 10px;
+	display: inline-block;
+	text-decoration: none;
+	color: #F8F8F8;
+	border: 1px solid #F8F8F8;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-left: 248px;
+}
+.conteiner a:hover{
+	background: #F8F8F8;
+	color: #8267BE;
+}
+.container a:active{
+	background-color: #8267BE;
+	color: #FFBD35;
+}
+
+.swiper-slide:hover{
+	box-shadow: 7px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.swiper-slide{
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+}
+.swiper-button-next, .swiper-button-prev{
+	background-color: #FFFFFF;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-radius: 100px;
+}
+/*----------------------------------------------*/
+
+
 
 .formulario {
 	display: flex;
@@ -200,5 +293,3 @@ h3 {
 	border-radius: 10px;
 	cursor: pointer;
 }
-
-
