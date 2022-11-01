@@ -9,8 +9,8 @@
 
 /* branch Matias */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 
 
 
@@ -45,7 +45,7 @@ h1 {
 	font-weight: 400;
 }
 
-/*----------------Novedades--------------*/
+/*----Novedades----*/
 .presentacion h2 {
 	text-align: center;
 	color: #000000;
@@ -93,7 +93,7 @@ h1 {
 	border-top-right-radius: 15px;
 }
 
-.container .swiper-slide .card-description{
+.container .swiper-slide .card-description {
 	padding-top: 1%;
 	padding-right: 8%;
 	padding-left: 10%;
@@ -103,7 +103,7 @@ h1 {
 	padding-bottom: 19px;
 	width: 97%;
 }
-.container .swiper-slide .card-title,.container .swiper-slide .card-text{
+.container .swiper-slide .card-title,.container .swiper-slide .card-text {
 	padding-bottom: 11px;
 	padding-right: 23px;
 	padding-left: 20px;
@@ -190,7 +190,7 @@ label {
   color: white;
 }
 
-input, textarea {
+input textarea {
   /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
      Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
   font: 1em roboto;
@@ -203,7 +203,7 @@ input, textarea {
   border: 1px #FFFFFF;
 }
 
-input, textarea, select, button {
+input textarea select button {
   width : 600px;
   padding: 0;
   margin: 0;
@@ -243,7 +243,7 @@ ul a {
 	color: white;
 }
 
-#name,#CUIT,#lugar,#entrecalles,#barrio,#localidad,#partido,#pregunta,#descrip {
+#name, #CUIT, #lugar, #entrecalles, #barrio, #localidad, #partido, #pregunta, #descrip {
 	font-size: 14px;
 	color: #9E9E9E;
 	padding: 5px;
@@ -473,12 +473,12 @@ margin: auto;
 	color: #8267BE;
 }
 
-.header nav .list li:hover{
+.header nav, .list li:hover {
 	color: #6a5499;
 }
 
 
-.header .btn button{
+.header .btn button {
 	font-weight: 700;
 	color: #F8F8F8;
 	background-color: #8267BE;
