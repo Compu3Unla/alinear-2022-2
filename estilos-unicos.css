@@ -1,0 +1,489 @@
+/* 
+----PALETA DE COLORES----
+|	verde: #3FA796	    |
+|	violeta:#8267BE	    |
+|	blanco:#F8F8F8      |
+-------------------------
+
+*/
+
+/* branch Matias */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+
+
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #F8F8F8;
+}
+
+.header {
+	background-color: #3FA796;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 85px;
+	padding: 5px 10%;
+}
+ 
+.header .logo img {
+	height: 50px;
+	width: auto;
+} 
+
+h1 {
+	font-size: 20px;
+	font-family: ubuntu;
+	color: white;
+	font-weight: 400;
+}
+
+/*----Novedades----*/
+.presentacion h2 {
+	text-align: center;
+	color: #000000;
+	font-size: 48px;
+}
+
+.presentacion p {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.container p {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+.container h4 {
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+.container, .swiper-container {
+	width: 100%;
+	margin-left: 26px;
+	padding-left: 66px;
+}
+.container, .swiper-slide {
+	position: relative;
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+	padding-left: 0px;
+	bottom: 75px;
+	width: 325%;
+}
+
+.container .swiper-slide img {
+	display: block;
+	width: 97%;
+	height: 256px;
+	object-fit: cover;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.container .swiper-slide .card-description {
+	padding-top: 1%;
+	padding-right: 8%;
+	padding-left: 10%;
+	background-color: #3FA796;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	padding-bottom: 19px;
+	width: 97%;
+}
+.container .swiper-slide .card-title,.container .swiper-slide .card-text {
+	padding-bottom: 11px;
+	padding-right: 23px;
+	padding-left: 20px;
+	padding-top: 0px;
+	margin-bottom: 22px;
+}
+.presentacion {
+	text-align: center;
+	font-size: 182%;
+	margin-top: 91px;
+	margin-bottom: 137px;
+}
+
+.container a {
+	padding: 10px;
+	display: inline-block;
+	text-decoration: none;
+	color: #F8F8F8;
+	border: 1px solid #F8F8F8;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-left: 248px;
+}
+.conteiner a:hover {
+	background: #F8F8F8;
+	color: #8267BE;
+}
+
+.container a:active {
+	background-color: #8267BE;
+	color: #FFBD35;
+}
+
+.swiper-slide:hover {
+	box-shadow: 7px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.swiper-slide {
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+}
+
+.swiper-button-next, .swiper-button-prev {
+	background-color: #FFFFFF;
+	padding-left: 12px;
+	padding-right: 12px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	border-radius: 100px;
+}
+/*----------------------------------------------*/
+
+.formulario {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+form {
+  /* Centrar el formulario en la página */
+  margin: 0 auto;
+  width: 606px;
+  /* Esquema del formulario */
+  padding: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Tamaño y alineación uniforme */
+  display: inline-block;
+  padding-bottom: 5px;
+  width: 600px;
+  text-align:inherit;
+  font-size: 15px;
+  color: white;
+}
+
+input textarea {
+  /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+     Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+  font: 1em roboto;
+  height: 35px;
+  /* Tamaño uniforme del campo de texto */
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  /* Hacer coincidir los bordes del campo del formulario */
+  border: 1px #FFFFFF;
+}
+
+input textarea select button {
+  width : 600px;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+li, label {
+	font-size: 20px;
+	font-family: "Roboto";
+	font-weight: 300;
+	margin-bottom: 10px;
+}
+
+.checkbox {
+	width: 14px;
+	height: 14px;
+	background-color: transparent;
+	color: transparent;
+	border-style: hidden;
+
+}
+
+ul a li {
+	width: 109px;
+	height: 40px;
+	background-color: #8267BE;
+	border: none;
+	border-radius: 10px;
+	text-align:center;
+	display: inline;
+	padding: 10px 10px;
+}
+
+ul a {
+	text-decoration: none;
+	font-size: 14px;
+	color: white;
+}
+
+#name, #CUIT, #lugar, #entrecalles, #barrio, #localidad, #partido, #pregunta, #descrip {
+	font-size: 14px;
+	color: #9E9E9E;
+	padding: 5px;
+}
+
+h2  {
+    font-family: ubuntu, 'sans serif'; 
+    font-size: 48px;
+	font-weight: 700;
+	padding-bottom: 32px;
+}
+
+h3, h4, p, a {
+	font-family: roboto, 'sans serif';
+}
+
+h2, h3, h4, p {
+	color: #F8F8F8;
+	text-align: center;
+}
+
+h3 {
+    font-size: 32px;
+	padding-bottom: 32px;
+}
+
+h4 {
+    font-size: 28px;
+	max-width: 265px;
+	padding: 144px 8px 0px 21px;
+}
+
+p {
+    font-size: 20px;
+	font-weight: 300;
+	padding-bottom: 64px;
+	max-width: 800px;
+	margin: auto;
+}
+
+span {
+	font-weight: 700;
+}
+
+.texto_corto {
+max-width: 360px;
+margin: auto;
+}
+
+.sobre_nosotros {
+    background-color: #3FA796;
+    padding: 98px 0px 24px 0px;
+    text-align: center;
+}
+
+.containers {
+	display: flex;
+	justify-content: center;
+	gap: 86px;
+	padding-bottom: 48px;
+	position: relative;
+}
+
+.corazones {
+	position: absolute;
+	top: 36px;
+}
+
+.container_violeta {
+	background-color: #8267BE;
+	width: 280px;
+	height: 265px;
+	border-radius: 30px;
+	text-align: center;
+}
+
+.subtitulo h2 {
+	color: #1e1e1e;
+	padding: 80px 0px 64px 0px;
+}
+
+.concienticemos {
+	display: inline-flex;
+	flex-direction: row;
+	
+}
+
+.container_little {
+	display: flex;
+	flex-direction: column;
+}
+
+.card {
+	width: 681px;
+	height: 210px;
+	margin: 0px 0px 31px 32px;
+	border-radius: 30px ;
+	overflow: hidden;
+	background: #8267BE;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+	cursor: default;
+	transition: all 400ms ease;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.iconos {
+	position: absolute;
+	padding: 24px 0px 0px 590px;
+
+}
+
+.card:hover {
+	box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.8);
+	transform: translateY(-5%);
+}
+
+.card h4 {
+	font-weight: 700;
+	font-size: 20px;
+	padding: 74px 0px 36px 50px;
+	max-width: 380px;
+}
+
+.card .contenido a {
+	padding: 10px;
+	display: inline-block;
+	text-decoration: none;
+	color: #F8F8F8;
+	border: 1px solid #F8F8F8;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-left: 330px;
+}
+.card .contenido a:hover{
+	background: #F8F8F8;
+	color: #8267BE;
+}
+
+
+----Cards-grandes----
+
+.card_father, .container_flip {
+    margin-left: 32px;
+	perspective: 1000px;
+	max-width: 600px;
+}
+
+.card_father:hover .card_great {
+    transform: rotateY(180deg);
+}
+
+.card_great {
+	width: 663px;
+    height: 694px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 800ms ease;
+}
+
+.card_front {
+    background-size: cover;
+    background-position: center;
+}
+
+.card_front, .card_back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    border-radius: 30px;
+}
+
+.card_back {
+    transform: rotateY(180deg);
+    background: #8267BE;
+}
+
+.contenido_front {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 279px;
+    transform: translateZ(60px);
+	max-width: 370px;
+	margin: auto;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 30px;
+}
+
+.contenido_back {
+    padding-top: 279px;
+    text-align: center;
+    transform: translateZ(60px);
+	max-width: 540px;
+	margin: auto;
+}
+
+.contenido_back p {
+    padding-top: 36px;
+    font-size: 20px;
+}
+
+.contenido_back a {
+    padding: 10px;
+	display: inline-block;
+	text-decoration: none;
+	color: #F8F8F8;
+	border: 1px solid #F8F8F8;
+	border-radius: 4px;
+	transition: all 400ms ease;
+}
+
+.contenido_back a:hover {
+    background: #F8F8F8;
+	color: #8267BE;
+}
+
+.header nav, .list li:hover {
+	color: #6a5499;
+}
+
+
+.header .btn button {
+	font-weight: 700;
+	color: #F8F8F8;
+	background-color: #8267BE;
+	border: none;
+	padding: 10px 15px;
+	border-radius: 10px;
+	cursor: pointer;
+}

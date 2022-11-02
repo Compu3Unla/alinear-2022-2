@@ -15,37 +15,15 @@
 
 
 
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
 
 body {
 	background-color: #F8F8F8;
 }
 
-.header{
-	background-color: #3FA796;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	height: 85px;
-	padding: 5px 10%;
-}
-
-
-.logo img{
-	height: 50px;
-	width: auto;
-} 
-
-
 .presentacion {
 	text-align: center;
 	font-size: 2em;
 	color: white;
-
 }
 
 .presentacion p {
@@ -53,7 +31,6 @@ body {
 	padding-top: 5px;
 	text-align: center;
 	font-weight: 300;
- 
 }
 
 h1 {
@@ -65,8 +42,7 @@ h1 {
 
 .formulario {
 	display: flex;
-	flex-direction: column;
-	
+	flex-direction: column;	
 }
 
 form {
@@ -131,7 +107,6 @@ li label {
 	background-color: transparent;
 	color: transparent;
 	border-style: hidden;
-
 }
 
 ul a li {
@@ -174,21 +149,6 @@ h3 {
 	font-weight: 700;
 	padding-bottom: 32px;
 }
-.header nav .list li:hover{
-	color: #6a5499;
-}
-
-
-.btn button{
-	font-weight: 700;
-	color: #F8F8F8;
-	background-color: #8267BE;
-	border: none;
-	padding: 10px 15px;
-	border-radius: 10px;
-	cursor: pointer;
-}
-
 
 .contenedor1 {
 	width: 1296px;
@@ -222,23 +182,17 @@ h4 {
 	font-family: ubuntu;
 	color: black;
 	font-size: 36px;
-	text-align: center;
-	padding: 10px;
-	
+	text-align: center;	
 }
 
 ul {
 	list-style: none;
 	padding-top: 20px;
 	font-size: 12px;
-	text-align: center;
-	
-	
 }
 
 ul li {
 	display: inline;
-
 }
 
 ul a li {
@@ -255,8 +209,6 @@ ul a li {
 	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
-
-
 .parrafo {
 	width: 858px;
 	height: 112px;
@@ -264,7 +216,6 @@ ul a li {
 	float: left;
 	margin-left: 30px;
 	margin-top: 50px;
-
 }
 
 p {
@@ -275,7 +226,6 @@ p {
 	line-height: 30px;
 	max-width: 860px;
 	margin: auto;
-
 }
 
 span {
@@ -308,7 +258,6 @@ span {
 	width: 80px;
 	height: 80px;
 	margin-left: 1140px;
-	margin-top: -80px;
-	
+	margin-top: -80px;	
 }
 
