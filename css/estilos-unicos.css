@@ -10,14 +10,14 @@
 
 /* branch Matias */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
 
 
 
 *{
-	padding: 0;
-	margin: 0;
+	padding: 0px;
+	margin: 0px;
 	box-sizing: border-box;
 }
 
@@ -81,5 +81,89 @@ transform: scale(1.1);
 	border-radius: 10px;
 	cursor: pointer;
 }
+
+/* Home */
+
+.registro{
+	background-color: #8267BE;
+	height: 560px;
+	width: 490px;
+	padding: 50px;
+	margin-left: 130px;
+	text-align: center;
+	border-radius: 42px;
+	
+}
+
+.home{
+	display: flex;
+	justify-content: center;	
+	background-image: url(/img/foto-portada-2.svg );
+	background-repeat: no-repeat;
+	background-size: 100%;	
+	height: 811px;
+	padding-top: 200px;
+		
+}
+
+.home .foto-portada p{
+	position: absolute;
+}
+
+.texto-portada{
+	max-width: 476px;
+	margin-right: 400px;
+	margin-top: 200px;
+
+}
+
+.texto-portada h2,p {
+	color: #F8F8F8;
+}
+
+.texto-portada h2 {
+	padding-bottom: 16px;
+	font-size: 48px;
+	font-family: ubuntu, 'sans serif';;
+}
+
+.texto-portada p {
+	font-size: 27px;
+	font-family: roboto, 'sans serif';	
+}
+
+.facebook{
+	padding: 8px 16px 8px 16px;	
+}
+
+.google, .facebook {
+	background-color: #FFBD35;
+	border-radius: 9px;
+	
+	
+}
+
+.google{
+	padding: 11px;
+
+	
+}
+
+.formulario{
+	padding:50px; 
+}
+
+.formulario-registro input {
+	border-radius: 8px ;
+	width: 370px;
+	height: 40px;
+	margin-top: 24px;
+	
+}
+
+
+
+
+
 
 
