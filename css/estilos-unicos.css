@@ -514,7 +514,6 @@ input, textarea, select, button {
 	flex-direction: column;
 }
 
-
 .card {
 	width: 681px;
 	height: 210px;
@@ -694,12 +693,14 @@ input, textarea, select, button {
 .boton-fundacion {
 	width: 300px;
 	height: 48px;
+
 }
 
 .botonera-fund {
 	display: flex;
 	width: 1440px;
 	margin-left: 39px;
+	
 }
 
 .botonera-fund a {
