@@ -97,17 +97,11 @@ main {
 	background-image: url(/img/foto-portada-2.svg );
 	background-repeat: no-repeat;	
 	height: 810px;
-	padding-top: 200px;
-}
-
-.home .foto-portada p {
-	position: absolute;
 }
 
 .texto-portada {
 	max-width: 476px;
-	margin-right: 400px;
-	margin-top: 200px;
+	margin: 340px 0px 114px 0px;
 }
 
 .texto-portada h2 p {
@@ -125,7 +119,7 @@ main {
 	font-family: roboto, 'sans serif';	
 }
 
-.facebook{
+.facebook {
 	padding: 8px 16px 8px 16px;	
 }
 
@@ -171,17 +165,20 @@ main {
 	height: 40px;
 }
 
-.inicia-sesion {
+.formulario-registro a {
+	padding: 13px;
 	display: flex;
-	padding: 13px 120px 13px 120px;
 	text-decoration: none;
+	justify-content: center;
 	color: #F8F8F8;
-	border: 3px solid white;
+	border: 3px solid #F8F8F8;
 	border-radius: 8px;
-	font-family: roboto;
-	font-size: 16px;
-	margin: 24px;
-	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+	margin-top: 32px;
+}
+
+.formulario-registro a:hover {
+	background: #F8F8F8;
+	color: #8267BE;
 }
 
 /* etiquetas cris */
@@ -350,8 +347,9 @@ margin: auto;
 	padding-bottom: 32px;
 	border-radius: 100px;
 	position: absolute;
-	margin-left: 5px;}
-	
+	margin-left: 5px;
+}
+
 /* nuestro barrio */
 .nuestro-barrio {
 	height: 990px;
@@ -445,7 +443,6 @@ margin: auto;
 form {
   margin: 0 auto;
   width: 606px;
-  padding: 1em;
 }
 
 .form-pau {
@@ -455,7 +452,7 @@ form {
 }
 
 form li + li {
-  margin-top: 1em;
+  margin-top: 16px;
 }
 
 .form-pau li {
@@ -488,19 +485,29 @@ input, textarea, select, button {
 	border-style: hidden;
 }
 
-/* .continuar li a {
-	text-decoration: none;
+.continuar li {
 	font-size: 16px;
+	font-weight: 500;
 	padding: 8px 16px;
-	border: 3px solid #F8F8F8;
 	text-decoration: none;
-	color: #3FA796;
-} */
+	display: inline-block;
+	text-align: start;
+	color: #F8F8F8;
+	border: 2px solid #F8F8F8;
+	border-radius: 8px;
+	margin-top: 32px;
+}
+
+.continuar li:hover {
+	background-color: #F8F8F8;
+	color: #8267BE;
+}
+
 
 #name,#CUIT,#lugar,#entrecalles,#barrio,#localidad,#partido,#pregunta,#descrip {
 	font-size: 14px;
 	color: #9E9E9E;
-	padding: 5px;
+	padding: 12px;
 }
 
 /* concienticemos */
@@ -734,15 +741,6 @@ input, textarea, select, button {
 	padding-bottom: 32px;
 }
 
-/* .contribuir p {
-    font-family: roboto, 'sans serif';
-    font-size: 32px;
-	color: #F8F8F8;
-	text-align: center;
-	font-weight: 700;
-	padding-bottom: 32px;
-} */
-
 .header nav .list li:hover{
 	color: #6a5499;
 }
@@ -778,6 +776,7 @@ input, textarea, select, button {
 	align-items: center;
 	background-color: #8267BE;
 }
+
 .botones-cantidad a {
 	text-decoration: none;
 }
