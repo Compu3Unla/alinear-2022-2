@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/estilos-unicos.css">
-    
+    <link rel="stylesheet" href="estilos-unicos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Alinear</title>
 </head>
 <body>
@@ -53,7 +53,6 @@
                     <label for="mail">Registrate</label>
                  <input type="button" id="CUIT" name="user_CUIT">
  			</li>
-
                 </ul>
 
                 <p>O inicia sesion con</p>
@@ -63,7 +62,6 @@
                 <img src="" alt="" >
 
             </article>
-
             <article>
                 <h1>
                     Tu ayuda es transformación
@@ -74,98 +72,225 @@
                 </h2>
             </article>
         </section>
-
-       
-
-        <section class="seccion_uno">
-            <article class="nosotros">
+        <div class="sobre_nosotros">
+            <div>
                 <h2>Sobre nosotros</h2>
                 <p>Trabajamos para reducir el desperdicio de alimentos, concientizando a las personas
                 sobre dicha problem&aacute;tica. Al mismo tiempo, aportamos nuestro granito de arena,
                 mediante la colaboraci&oacute;n de todos para mejorar la calidad alimentaria de
                 miles de personas del AMBA. </p>
-            </article>
-        <section class="contenedores_violetas">
-            <article class="contenedor_uno">
-                <h4 >Ayudar a quienes lo necesitan</h4>
-            </article>
-            <article class="contenedor_dos">
-                <h4>No despercidiar alimentos</h4>
-            </article> 
-        </section>
-            
-            <p>Nuestro objetivo es alinear, manteniendo siempre una l&iacute;nea recta</p>
-            <article class="objetivo">
+            </div>
+            <div class="containers">
+                <div class="corazones"><img src="img/img_corazonesamarillos.svg" alt="img-corazonesamarillos"></div>
+                <div class="container_violeta">
+                    <h4 >Ayudar a quienes lo necesitan</h4>
+                </div>
+                <div class="container_violeta">
+                    <h4>No despercidiar alimentos</h4>
+                </div> 
+            </div>
+                <p class="texto_corto"><span>Nuestro objetivo es alinear,</span> manteniendo siempre una l&iacute;nea recta</p>
+            <div class="objetivo">
                 <h3>¿C&oacute;mo lograr este objetivo?</h3>
                 <p>La tarea que realizamos todos los d&iacute;as es posible gracias al compromiso de distintas personas.
                 Por eso decimos que somos una gran cadena solidaria en la que cada parte es fundamental para cumplir
                 con nuestra misi&oacute;n.</p>
-            </article>
-        </section>
-
-        <div class="novedades">
-				
-            <section class="presentacion">
-            	<h2>Novedades</h2>
-        		<p>Conocer lo que hacemos es una forma de ser parte. Enterate de nuestras últimas noticias, eventos y acciones
-                </p>
-            </section>
-		
-	</div>
-	<section class= "container">
-		<div class= "variasnoticias">
-			<div class="noticia1">
-			<img src="img/1048685_1385664978318141_1758480166_o.jpg" width="375" height="272.21px" alt="Foto de los integrantes"/>
-			<div class= "texto1">
-				<h3>Récord de donaciones</h3>
-				<p>Esta primer semana de octubre d 2022,</p>
-				<p>el merendero “Sembrand Esperanzas”,&nbsp;</p>
-                    <p>de la localidad de Glew recibió una&nbsp;</p>
-                    <p>donación de más de 200 alimentos</p>
-                    <p>&nbsp;no perecederos, lácteos y verduras...</p>
-<h4>Ver mas..</h4>
-				</div>
+            </div>
+        </div>
+        
+	    
+	    <!-----------------------NOVEDADES-------------------------->
+	    <div class="novedadess">
+			<div class="presentacion">
+				<section class="presentacion">
+					<h2>Novedades</h2>
+					<p>Conocer lo que hacemos es una forma de ser parte.</p>
+					<p>Enterate de nuestras últimas noticias, eventos y acciones</p>
+				</section>
+			</div>
+			    <div class="container">
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+				<div class="swiper-container mySwiper">
+				<div class="swiper-wrapper">
+					 <div class="swiper-slide">
+						<img src="img/01.jpg" alt="imagen de integrantes de este espacio">
+						<div class="card-description">
+							<div class="card-title">
+							<h4>Record de donaciones</h4>
+							</div>
+							<div class="card-text">
+							<p>“Sembrando Esperanzas”, de la localidad de Glew recibió una donación de más de 2000 alimentos no perecederos, lácteos y verduras..</p>
+							</div>
+							<div class="card-link">
+							<a href="#">Ver más</a>
+							</div>
+						</div>
 					</div>
-			
-			<div class="noticia2">
-			<img src="img/restaurante-escolar-02.jpg" width="375" height="282.21px" alt="Foto de los integrantes"/>
-			<div class= "texto2">
-				<h3>Quilmes nos necesita</h3>
-				<p>Varios merenderos de la zona de</p>
-				<p>&nbsp;quilmes oeste&nbsp; requiere de la atención</p>
-				<p>&nbsp;Muchos de los vecinos denuncian falta</p>
-				<p>&nbsp;de ayuda del Estado...</p>
-<h4>Ver mas..</h4>
+				<div class="swiper-slide">
+					<img src="img/02.jpg" alt="imagen de integrantes de este espacio">
+					<div class="card-description">
+						<div class="card-title">
+						<h4>Quilmes nos necesita</h4> </div>
+						<div class="card-text">
+						<p>Varios merenderos de la zona de Quilmes Oeste requiere de atención inmediata. Muchos de los vecinos denuncian falta de ayuda del Estado..</p>
+						</div>
+						<div class="card-link">
+						<a href="#">Ver más</a>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="noticia3">
-			<img src="img/20181201_175917.jpg" width="375" height="272.21px" alt="Foto de los integrantes"/>
-			<div class= "texto3">
-				<h3>Nuevo comedor&nbsp;</h3>
-				<h3>comunitario </h3>
-<p>Logramos juntar casi 500 kilos de</p>
-				<p>&nbsp;alimentos en la ultima colecta y l nuestro</p>
-				<p>&nbsp;objetivo es duplicar este numero</p>
-				<p>&nbsp;para llegar a más comedores...</p>
-<h4>Ver mas..</h4>
+				<div class="swiper-slide">
+					<img src="img/03.jpg" alt="imagen de integrantes de este espacio">
+					<div class="card-description">
+					<div class="card-title">
+					<h4>Nuestro comedor comunitario</h4>
+					</div>
+					<div class="card-text">
+					<p>Logramos juntar casi 500 kilos de alimentos en la ultima colecta y nuestro objetivo es duplicar este numero para llegar a más comedores..</p>
+					</div>
+					<div class="card-link">
+					  <a href="#">Ver más</a>
+					</div>
+					</div>
 				</div>
-			</div>
-			<div class="noticia4">
-			<img src="img/01_2313.png" width="375" height="272.21px" alt="Foto de los integrantes"/>
-			<div class= "texto4">
-				<h3>La pandemia&nbsp;</h3>
-				<h3>no da tregua </h3>
-<p>A más de un año de la pandemia</p>
-				<p>&nbsp;ocasionada por el COVID 19, se duplicó</p>
-				<p>&nbsp;cantidad de personas atendidas por las</p>
-				<p>&nbsp;organizaciones comunitarias...</p>
-<h4>Ver mas..</h4>
+				<div class="swiper-slide">
+					<img src="img/04.jpg" alt="imagen de integrantes de este espacio">
+				<div class="card-description">
+					<div class="card-title">
+					<h4>La pandemia no da tregua</h4>
+					</div>
+					<div class="card-text">
+					<p>A más de un año de la pandemia ocasionada por el COVID 19, se duplicó la cantidad de personas atendidas por las organizaciones..</p>
+					</div>
+					<div class="card-link">
+					<a href="#">Ver más</a>
+					</div>
+				 </div>
+				</div>
+				<div class="swiper-slide">
+					<img src="img/05.jpg" alt="imagen de integrantes de este espacio">
+					<div class="card-description">
+					<div class="card-title">
+					<h4>Entregaron donaciones</h4>
+					</div>
+					<div class="card-text">
+					<p>La Fundación Metas Compartidas encabezó una entrega de donaciones destinada a los niños que son pacientes del Hospital Dr. Ramón..</p>
+					</div>
+					<div class="card-link">
+					<a href="#">Ver más</a>
+					</div>
 				</div>
 				</div>
-			
-		</div>
-	</section>
 
+				<div class="swiper-slide">
+					<img src="img/06.jpg" alt="imagen de integrantes de este espacio">
+					<div class="card-description">
+					<div class="card-title">
+					<h4>Juntos somos mas</h4>
+					</div>
+					<div class="card-text">
+					<p>Lograr una donación extraordinaria de alimentos y productos de primera necesidad, que llegue a las mesas de miles de hogares  en..</p>
+					</div>
+					<div class="card-link">
+					<a href="#">Ver más</a>
+					</div>
+					</div>
+				</div>
+					<div class="swiper-slide">
+						<img src="img/01.jpg" alt="imagen de integrantes de este espacio">
+						<div class="card-description">
+						<div class="card-title">
+							<h4>Record de donaciones</h4>
+						</div>
+						<div class="card-text">
+							<p>“Sembrando Esperanzas”, de la localidad de Glew recibió una donación de más de 2000 alimentos no perecederos, lácteos y verduras..</p>
+						</div>
+						<div class="card-link">
+						<a href="#">Ver más</a>
+						</div>
+						</div>
+					</div>
+				<div class="swiper-slide">
+						<img src="img/02.jpg" alt="imagen de integrantes de este espacio">
+						<div class="card-description">
+						<div class="card-title">
+							<h4>Quilmes nos necesita</h4>
+						</div>
+						<div class="card-text">
+							<p>Varios merenderos de la zona de Quilmes Oeste requiere de atención inmediata. Muchos de los vecinos denuncian falta de ayuda del Estado..</p>
+						</div>
+						<div class="card-link">
+							<a href="#">Ver más</a>
+						</div>
+					</div>
+				</div>
+			<div class="swiper-slide">
+					<img src="img/03.jpg" alt="imagen de integrantes de este espacio">
+				 <div class="card-description">
+					<div class="card-title">
+					<h4>Nuestro comedor comunitario</h4>
+					</div>
+					<div class="card-text">
+					<p>Logramos juntar casi 500 kilos de alimentos en la ultima colecta y nuestro objetivo es duplicar este numero para llegar a más comedores..</p>
+					</div>
+					<div class="card-link">
+					<a href="#">Ver más</a>
+					</div>
+				 </div>
+			  </div>
+				<div class="swiper-slide">
+					<img src="img/04.jpg" alt="imagen de integrantes de este espacio">
+					<div class="card-description">
+					<div class="card-title">
+					<h4>La pandemia no da tregua</h4>
+					</div>
+					<div class="card-text">
+					<p>A más de un año de la pandemia ocasionada por el COVID 19, se duplicó la cantidad de personas atendidas por las organizaciones ..</p>
+					</div>
+					<div class="card-link">
+					<a href="#">Ver más</a>
+					</div>
+					</div>
+				</div>
+				 <div class="swiper-slide">
+					<img src="img/05.jpg" alt="imagen de integrantes de este espacio">
+					 <div class="card-description">
+					<div class="card-title">
+					<h4>Entregaron donaciones</h4>
+					</div>
+					<div class="card-text">
+					<p>La Fundación Metas Compartidas encabezó una entrega de donaciones destinada a los niños que son pacientes del Hospital Dr. Ramón..</p>
+					</div>
+					<div class="card-link">
+					<a href="#">Ver más</a>
+					</div>
+					</div>
+				</div>
+
+				<div class="swiper-slide">
+					<img src="img/06.jpg" alt="imagen de integrantes de este espacio">
+					<div class="card-description">
+					<div class="card-title">
+					<h4>Juntos somos mas</h4>
+					</div>
+					<div class="card-text">
+					<p>Lograr una donación extraordinaria de alimentos y productos de primera necesidad, que llegue a las mesas de miles de hogares  en riesgo social..</p>
+					</div>
+					<div class="card-link">
+					<a href="#">Ver más</a>
+					</div>
+				</div> 
+				</div>
+
+		</div>
+
+		</div>
+			</div>
+		</div>
+	    	    <!------------------------------------------------------------>
+
+	    
     <div class="Nuestro barrio">
 				<section class="presentacion">
 				<h2>Nuestro Barrio</h2>
@@ -182,7 +307,7 @@
 			</div>
 			</div>
 	</section>
-	
+
 	<section class="cointainer2">
 		<h1>DATOS DE TU ORGANIZACIÓN</h1>
 		<div class="formulario">
@@ -228,30 +353,76 @@
 		</div>
 	</section>
 
-<section>
-    <article class="concientizar">
-        <h2 class="seccion-dos">Concienticemos</h2>
-    </article>
-    <article class="caja-uno">
-        <p>10 maneras de ayudar a quiénes lo necesitan y a nuestro planeta</p>
-    </article>
-    <article class="caja-dos">
-        <p>Reciclado tapitas plásticas para la Fundacion Garrahan</p>
-    </article>
-    <article class="caja-tres">
-        <p>Consumo responsable: formas de evitar el desperdicio de alimentos</p>
-    </article>
-    <article class="caja-cuatro">
-        <img src="img/img-desperdicios.svg" alt="desperdicios"/>
-        <h3 class="subtitulo-caja4">La importancia del saber</h3>
-        <p class="descripcion">Unos 1300 millones de toneladas de comida producida para el consumo humano, termina en vertederos.
-        Sin embargo, una de cada nueve personas en el mundo sufre de hambre. Contamos algunas iniciativas para
-        reducir el desperdicio de alimentos hasta convertirlo en un arma en la lucha por llegar a la meta
-        del “Hambre Cero”.</p>\
-        <p>Leer más ></p>
-    </article>
-</section>
-
+</div class="seccion_dos">
+<div class="subtitulo">
+    <h2>Concienticemos</h2>
+</div>
+<div class="concienticemos">
+    <div class="container_little">
+        <div class="card">
+            <figure>
+                <img src="img/img-cuidemoselplaneta.svg" alt="img-cuidemoselplaneta">
+            </figure>
+            <div class="iconos">
+                <img src="img/icono_corazon.svg" alt="icono_corazon">
+                <img src="img/icono_compartir.svg" alt="icono_compartir">
+            </div>
+            <div class="contenido">
+                <h4>10 maneras de ayudar a quiénes lo necesitan y a nuestro planeta</h4>
+                <a href="#">Leer más</a>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="img/img-tapasplastico.svg" alt="img-tapasplastico">
+            </figure>
+            <div class="iconos">
+                <img src="img/icono_corazon.svg" alt="icono_corazon">
+                <img src="img/icono_compartir.svg" alt="icono_compartir">
+            </div>
+            <div class="contenido">
+                <h4>Reciclado tapitas plásticas para la Fundacion Garrahan</h4>
+                <a href="#">Leer más</a>
+            </div>
+        </div>
+        <div class="card">
+            <figure>
+                <img src="img/img-nodesperdicios.svg" alt="img-nodesperdicios">
+            </figure>
+            <div class="iconos">
+                <img src="img/icono_corazon.svg" alt="icono_corazon">
+                <img src="img/icono_compartir.svg" alt="icono_compartir">
+            </div>
+            <div class="contenido">
+                <h4>Consumo responsable: formas de evitar el desperdicio de alimentos</h4>
+                <a href="#">Leer más</a>
+            </div>
+        </div>
+    </div>
+    <div class="container_flip">
+        <div class="card_father">
+            <div class="card_great">
+                <div class="card_front" style="background-image: url(img/img-cardgreat.svg);">
+                    <div class="bg"></div>
+                    <div class="contenido_front">
+                        <h3>Esto le estamos haciendo a nuestro planeta...</h3>
+                    </div>
+                </div>
+                <div class="card_back">
+                    <div class="contenido_back">
+                        <h3>Primero los datos</h3>
+                        <p>Unos 1300 millones de toneladas de comida producida para el consumo humano, termina en vertederos.
+                        Sin embargo, una de cada nueve personas en el mundo sufre de hambre. Contamos algunas iniciativas para
+                        reducir el desperdicio de alimentos hasta convertirlo en un arma en la lucha por llegar a la meta del
+                        “Hambre Cero”.</p>
+                        <a href="#">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 <section>
     <article>
         <h3>COLABORA CON LA FUNDACION</h3>
@@ -291,10 +462,12 @@
 
     </article>
 </section>
-
+	 </main>
+ <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="app.js"></script>
+</body>
 <footer>
     <p>Copyright 2022 -  ® alinear | Todos los derechos reservados</p>
-
     <img src="" alt="facebook">
     <img src="" alt="twitter">
     <img src="" alt="instagram">
@@ -302,7 +475,7 @@
 </footer>
 
 
-    </main>
-    
-</body>
+   
+   
+
 </html>
