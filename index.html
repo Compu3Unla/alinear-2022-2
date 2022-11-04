@@ -10,24 +10,24 @@
 </head>
 <body>
     <header class="header">
-    <div class="logo">
-        <img src="img/alinear-logo-blanco.svg" alt="Alinear">
-    </div>
-    <nav>
-        <ul class="list">                
-            <a href="#"><li>SOBRE NOSOTROS</li></a>
-            <a href="#"><li>NOVEDADES</li></a>
-            <a href="#"><li>NUESTRO BARRIO</li></a>
-            <a href="#"><li>CONCIENTICEMOS</li></a>
-            <a href="#"><li>COLABORAR</li></a>
-        </ul>
-    </nav> 
-    <a href="#" class="boton-header">DONÁ ACA</a>
-    <div class="imagenes-header">
-        <img src="img/icono-perfil.svg" alt="">
-        <img src="img/icono-hamburguesa.svg" alt="">
-    </div>
-</header>
+        <div class="logo">
+            <img src="img/alinear-logo-blanco.svg" alt="logo-alinear">
+        </div>
+        <nav>
+            <ul class="list">                
+                <a href="#"><li>SOBRE NOSOTROS</li></a>
+                <a href="#"><li>NOVEDADES</li></a>
+                <a href="#"><li>NUESTRO BARRIO</li></a>
+                <a href="#"><li>CONCIENTICEMOS</li></a>
+                <a href="#"><li>COLABORAR</li></a>
+            </ul>
+        </nav> 
+        <a href="#" class="boton-header">DONÁ ACA</a>
+        <div class="imagenes-header">
+            <img src="img/icono-perfil.svg" alt="icono-perfil">
+            <img src="img/icono-hamburguesa.svg" alt="icono-hamburguesa">
+        </div>
+    </header>
     <main>
         <section class="home">
             <div class="texto-portada">
@@ -44,8 +44,8 @@
 					<a class="inicia-sesion" href="#">INICIA SESIÓN</a>
 					<a class="inicia-sesion" href="#">REGISTRATE</a>
                   <p>O iniciá sesión con</p>
-				<img class="google" src="img/icono-google.svg" alt="">  
-                <img class="facebook" src="img/icono-facebook.svg" alt="">
+				<img class="google" src="img/icono-google.svg" alt="icono-google">  
+                <img class="facebook" src="img/icono-facebook.svg" alt="icono-facebook">
                 </div>
 				
      
@@ -76,14 +76,67 @@
                 con nuestra misi&oacute;n.</p>
             </div>
         </div>
-	    <!-----------------------NOVEDADES-------------------------->
-	    <!-- <div class="novedades">
-			<section class="novedades-cabecera">
-				<div class="novedades-cabecera">
-					<h2>Novedades</h2>
-					<p>Conocer lo que hacemos es una forma de ser parte.</p>
-					<p>Enterate de nuestras últimas noticias, eventos y acciones</p>
+	   <!-----------------------NOVEDADES-------------------------->
+	   
+        <div class="nuestro-barrio">
+            <div>
+                <section class="presentacion-nb">
+                    <h2 class="h2barrio">Nuestro Barrio</h2>
+                    <p>Te invitamos a inscribir tu organización a Alinear, de esta manera vamos a poder estar más cerca de quienes lo necesitan</p>
+                </section>
+            </div>
+            <section class="container-mapa">
+                <h4>Colocá tu provincia, localidad o ciudad..</h4>
+                <div class="buscador">
+                    <div class="mapa">
+                        <img src="img/mapa.svg" width="512" height="320" alt="mapita">
+                    </div>
                 </div>
+<!--probando galeria-->
+            </section>
+            <section class="container-form">
+                <h4>Datos de tu organización</h4>
+                <div class="formulario-org">
+                    <form action="/my-handling-form-page" method="post">
+                        <ul class="form-pau">
+                            <li>
+                                <input type="text" id="name" value="Nombre de la organización">
+                            </li>
+                            <li>
+                                <input type="text" id="CUIT" value="CUIT">
+                            </li>
+                            <li>
+                                <input type="text" id="lugar" value="Dirección donde presta servicio">
+                            </li>
+                            <li>
+                                <input type="text" id="entrecalles" value="Entrecalles">
+                            </li>
+                            <li>
+                                <input type="text" id="barrio" value="Barrio">
+                            </li>
+                            <li>
+                                <input type="text" id="localidad" value="Localidad">
+                            </li>
+                            <li>
+                                <input type="text" id="partido" value="Partido">
+                            </li>
+                            <li>
+                                <input type="text" id="pregunta" value="¿Cómo te enteraste de alinear?">
+                            </li>
+                            <li>
+                                <input type="text" id="descrip" value="Descripción del servicio principal">
+                            </li>
+                            <li>
+                            <input type="checkbox" class="checkbox" value="first_checkbox"> Tengo el aval solicitado para mi organización
+                            </li>
+                            <li>
+                            <input type="checkbox" class="checkbox" value="second_checkbox"> Acepto los términos y condiciones
+                            </li>
+                            <!-- <a class="continuar" href=""><li>CONTINUAR</li></a> -->
+                        </ul>
+                    </form>
+                </div>
+            </section>
 			</section>
 			    <div class="container-novedades">
 					<div class="swiper-button-next"></div>
@@ -324,6 +377,7 @@
 			</form>
 		</div>
 	</section>
+
 		</div>
             <div class="subtitulo">
                 <h2>Concienticemos</h2>
