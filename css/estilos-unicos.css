@@ -5,21 +5,27 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
-	max-width: 100%;
 }
 
 body {
     background-color: #F8F8F8;
-	background-size:100% auto;
+	background-size: 100% auto;
 	background-attachment: scroll;
-	position: relative;
-	padding-bottom: 196px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-top: 90px;
+	width: 100%;
 }
 
 .header {
-	width: 1440px;
+	width: 100%;
 	background-color: #3FA796;
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	height: 90px;
 	position: fixed;
@@ -257,199 +263,99 @@ margin: auto;
 }
 
 /*----Novedades----*/
-/* <div class="novedadess">
-			<div class="presentacion">
-				<section class="presentacion">
-					<h2>Novedades</h2>
-					<p>Conocer lo que hacemos es una forma de ser parte
-						Enterate de nuestras últimas noticias, eventos y acciones </p>
-				</section>
-			</div>
-			    <div class="container">
-				<div class="swiper-container mySwiper">
-				<div class="swiper-wrapper">
-					 <div class="swiper-slide">
-						<img src="img/01.jpg" alt="imagen de integrantes de este espacio">
-						<div class="card-description">
-							<div class="card-title">
-							<h4>Record de donaciones</h4>
-							</div>
-							<div class="card-text">
-							<p>“Sembrando Esperanzas”, de la localidad de Glew recibió una donación de más de 2000 alimentos no perecederos, lácteos y verduras..</p>
-							</div>
-							<div class="card-link">
-							<a href="#">Ver más</a>
-							</div>
-						</div>
-					</div>
-				<div class="swiper-slide">
-					<img src="img/02.jpg" alt="imagen de integrantes de este espacio">
-					<div class="card-description">
-						<div class="card-title">
-						<h4>Quilmes nos necesita</h4> </div>
-						<div class="card-text">
-						<p>Varios merenderos de la zona de Quilmes Oeste requiere de atención inmediata. Muchos de los vecinos denuncian falta de ayuda del Estado..</p>
-						</div>
-						<div class="card-link">
-						<a href="#">Ver más</a>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/03.jpg" alt="imagen de integrantes de este espacio">
-					<div class="card-description">
-					<div class="card-title">
-					<h4>Nuestro comedor comunitario</h4>
-					</div>
-					<div class="card-text">
-					<p>Logramos juntar casi 500 kilos de alimentos en la ultima colecta y nuestro objetivo es duplicar este numero para llegar a más comedores..</p>
-					</div>
-					<div class="card-link">
-					  <a href="#">Ver más</a>
-					</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/04.jpg" alt="imagen de integrantes de este espacio">
-				<div class="card-description">
-					<div class="card-title">
-					<h4>La pandemia no da tregua</h4>
-					</div>
-					<div class="card-text">
-					<p>A más de un año de la pandemia ocasionada por el COVID 19, se duplicó la cantidad de personas atendidas por las organizaciones..</p>
-					</div>
-					<div class="card-link">
-					<a href="#">Ver más</a>
-					</div>
-				 </div>
-				</div>
-				<div class="swiper-slide">
-					<img src="img/05.jpg" alt="imagen de integrantes de este espacio">
-					<div class="card-description">
-					<div class="card-title">
-					<h4>Entregaron donaciones</h4>
-					</div>
-					<div class="card-text">
-					<p>La Fundación Metas Compartidas encabezó una entrega de donaciones destinada a los niños que son pacientes del Hospital Dr. Ramón..</p>
-					</div>
-					<div class="card-link">
-					<a href="#">Ver más</a>
-					</div>
-				</div>
-				</div>
 
-				<div class="swiper-slide">
-					<img src="img/06.jpg" alt="imagen de integrantes de este espacio">
-					<div class="card-description">
-					<div class="card-title">
-					<h4>Juntos somos mas</h4>
-					</div>
-					<div class="card-text">
-					<p>Lograr una donación extraordinaria de alimentos y productos de primera necesidad, que llegue a las mesas de miles de hogares  en..</p>
-					</div>
-					<div class="card-link">
-					<a href="#">Ver más</a>
-					</div>
-					</div>
-				</div>
-					<div class="swiper-slide">
-						<img src="img/01.jpg" alt="imagen de integrantes de este espacio">
-						<div class="card-description">
-						<div class="card-title">
-							<h4>Record de donaciones</h4>
-						</div>
-						<div class="card-text">
-							<p>“Sembrando Esperanzas”, de la localidad de Glew recibió una donación de más de 2000 alimentos no perecederos, lácteos y verduras..</p>
-						</div>
-						<div class="card-link">
-						<a href="#">Ver más</a>
-						</div>
-						</div>
-					</div>
-				<div class="swiper-slide">
-						<img src="img/02.jpg" alt="imagen de integrantes de este espacio">
-						<div class="card-description">
-						<div class="card-title">
-							<h4>Quilmes nos necesita</h4>
-						</div>
-						<div class="card-text">
-							<p>Varios merenderos de la zona de Quilmes Oeste requiere de atención inmediata. Muchos de los vecinos denuncian falta de ayuda del Estado..</p>
-						</div>
-						<div class="card-link">
-							<a href="#">Ver más</a>
-						</div>
-					</div>
-				</div>
-			<div class="swiper-slide">
-					<img src="img/03.jpg" alt="imagen de integrantes de este espacio">
-				 <div class="card-description">
-					<div class="card-title">
-					<h4>Nuestro comedor comunitario</h4>
-					</div>
-					<div class="card-text">
-					<p>Logramos juntar casi 500 kilos de alimentos en la ultima colecta y nuestro objetivo es duplicar este numero para llegar a más comedores..</p>
-					</div>
-					<div class="card-link">
-					<a href="#">Ver más</a>
-					</div>
-				 </div>
-			  </div>
-				<div class="swiper-slide">
-					<img src="img/04.jpg" alt="imagen de integrantes de este espacio">
-					<div class="card-description">
-					<div class="card-title">
-					<h4>La pandemia no da tregua</h4>
-					</div>
-					<div class="card-text">
-					<p>A más de un año de la pandemia ocasionada por el COVID 19, se duplicó la cantidad de personas atendidas por las organizaciones ..</p>
-					</div>
-					<div class="card-link">
-					<a href="#">Ver más</a>
-					</div>
-					</div>
-				</div>
-				 <div class="swiper-slide">
-					<img src="img/05.jpg" alt="imagen de integrantes de este espacio">
-					 <div class="card-description">
-					<div class="card-title">
-					<h4>Entregaron donaciones</h4>
-					</div>
-					<div class="card-text">
-					<p>La Fundación Metas Compartidas encabezó una entrega de donaciones destinada a los niños que son pacientes del Hospital Dr. Ramón..</p>
-					</div>
-					<div class="card-link">
-					<a href="#">Ver más</a>
-					</div>
-					</div>
-				</div>
+.presentacion h2 {
+	color: #000000;
+}
 
-				<div class="swiper-slide">
-					<img src="img/06.jpg" alt="imagen de integrantes de este espacio">
-					<div class="card-description">
-					<div class="card-title">
-					<h4>Juntos somos mas</h4>
-					</div>
-					<div class="card-text">
-					<p>Lograr una donación extraordinaria de alimentos y productos de primera necesidad, que llegue a las mesas de miles de hogares  en riesgo social..</p>
-					</div>
-					<div class="card-link">
-					<a href="#">Ver más</a>
-					</div>
-				</div> 
-				</div>
+.presentacion p {
+	color: #000000;
+}
 
-		</div>
+.presentacion {
+	text-align: center;
+	font-size: 182%;
+	margin-top: 91px;
+	margin-bottom: 137px;
+}
 
-		</div>
-				<div class="swiper-button-next"></div>
-				<div class="swiper-button-prev"></div>  
-			</div>
-		</div> */
+.container p {
+	color: #F8f8f8;
+}
 
+.card-text, .card-title {
+	text-align: center;
+	display: flex;
+}
+
+.container h4 {
+	font-size: 20px;
+	color: #F8f8f8;	
+}
+
+.container .swiper-slide {
+	border-radius: 15px;
+	box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+	margin-left: 59px;
+	width: 100px;
+}
+
+.container .swiper-slide img {
+	display: block;
+	object-fit: cover;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	width: 100%;
+}
+
+.container .swiper-slide .card-description {
+	background-color: #3FA796;
+	border-bottom-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+	width: 100%;
+}
+
+.container a {
+	padding-top: 15px;
+	padding-right: 23px;
+	padding-left: 23px;
+	padding-bottom: 15px;
+	display: inline-block;
+	align-content: flex-end;
+	color: #F8F8F8;
+	border: 1px solid #F8F8F8;
+	border-radius: 4px;
+}
+
+.container a:hover {
+	background: #F8F8F8;
+	color: #8267BE;
+}
+
+.swiper-slide:hover {
+	box-shadow: 7px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+
+.swiper-slide {
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+}
+
+.swiper-button-next, .swiper-button-prev {
+	background-color: #F8F8F8;
+	padding-left: 32px;
+	padding-right: 27px;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	border-radius: 100px;
+	position: absolute;
+	margin-left: 5px;}
+	
 /* nuestro barrio */
 .nuestro-barrio {
 	height: 990px;
-	width: 1440px;
+	width: 100%;
 	background-color: #3FA796;	
 }
 
@@ -858,8 +764,8 @@ input, textarea, select, button {
 	background-color: #3FA796;
 	display: flex;
 	justify-content:center;
-	position: absolute;
 	margin-left: 60px;
+	margin-bottom: 64px;
 }
 
 .botones-cantidad {
@@ -871,7 +777,6 @@ input, textarea, select, button {
 	justify-content: center;
 	align-items: center;
 	background-color: #8267BE;
-	position: relative;
 }
 .botones-cantidad a {
 	text-decoration: none;
@@ -964,23 +869,19 @@ input, textarea, select, button {
 	position: absolute;
 	width: 80px;
 	height: 80px;
-	margin-left: 1140px;
-	margin-top: -80px;
 }
 
 /* footer */
 footer {
+	padding-top: 20px;
 	background-color: #8267BE;
 	width: 100%;
 	height: 196px;
-	position: absolute;
-	bottom: 0;	
 }
 
 .footer-img {
 	display: flex;
 	justify-content: center;
-	margin-top: 40px;
 }
 
 .footer-img img {
@@ -989,15 +890,11 @@ footer {
 }
 
 .footer p {
+	padding-bottom: 16px;
 	font-size: 16px;
 	font-weight: 300px;
 	max-width: 500px;
-	max-height: 10px;
 	line-height: 40px;
-	margin-top: 45px;
+	margin-top: 24px;
 	text-align: center;
-}
-
-.footer-contribuir {
-	
 }
