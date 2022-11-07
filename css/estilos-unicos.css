@@ -29,6 +29,8 @@ main {
 	align-items: center;
 	height: 90px;
 	position: fixed;
+	z-index: 100;
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 .header .logo {
@@ -66,46 +68,84 @@ main {
 .header .boton-header {
 	font-weight: 700;
 	color: #F8F8F8;
-	background-color: #8267BE;
-	border: none;
-	padding: 10px 28px;
+	border: 2px solid #F8F8F8;
+	padding: 12px 24px;
 	border-radius: 8px;
 	cursor: pointer;
 	text-decoration: none;
 	margin-left: 20px;
 }
 
+.header .boton-header:hover {
+	background: #F8F8F8;
+	color: #3FA796;
+}
 .imagenes-header img {
 	margin-left: 44px;
 	border-radius: 0px;
 }
 
 /* Home */
-.registro {
-	background-color: #8267BE;
-	height: 560px;
-	width: 490px;
-	padding: 50px;
-	margin-left: 130px;
-	text-align: center;
-	border-radius: 42px;
-}
-
 .home {
 	display: flex;
 	justify-content: center;	
-	background-image: url(/img/foto-portada-2.svg );
+	background-image: url(/img/foto-portada.jpg);
 	background-repeat: no-repeat;	
 	height: 810px;
 }
 
+h1 {
+	font-family: ubuntu;
+	font-size: 58px;
+	font-weight: 700;
+	color: #F8F8F8;
+	text-align: start;
+}
+
+h2  {
+    font-family: ubuntu, 'sans serif'; 
+    font-size: 48px;
+	font-weight: 700;
+	padding-bottom: 32px;
+	text-align: center;
+}
+
+h3, h4, p, a {
+	font-family: roboto, 'sans serif';
+}
+
+h2, h3, h4, p {
+	color: #F8F8F8;
+}
+
+h3 {
+    font-size: 32px;
+	padding-bottom: 32px;
+	text-align: center;
+}
+
+h4 {
+    font-size: 28px;
+	max-width: 265px;
+	padding: 144px 8px 0px 21px;
+}
+
+p {
+    font-size: 20px;
+	font-weight: 300;
+	padding-bottom: 64px;
+	max-width: 800px;
+	margin: auto;
+}
+
 .texto-portada {
 	max-width: 476px;
-	margin: 340px 0px 114px 0px;
+	margin: 461px 0px 0px 148px;
 }
 
 .texto-portada h2 p {
 	color: #F8F8F8;
+	text-align: start;
 }
 
 .texto-portada h2 {
@@ -119,18 +159,14 @@ main {
 	font-family: roboto, 'sans serif';	
 }
 
-.facebook {
-	padding: 8px 16px 8px 16px;	
-}
-
-.google, .facebook {
-	background-color: #FFBD35;
-	border-radius: 9px;
-	margin: 16px;
-}
-
-.google{
-	padding: 11px;
+.registro {
+	margin: 139px 148px 0px 185px;
+	background-color: #8267BE;
+	height: 560px;
+	width: 490px;
+	padding: 50px;
+	text-align: center;
+	border-radius: 42px;
 }
 
 .formulario-registro p {
@@ -146,6 +182,7 @@ main {
 	float: left;
 	padding-left: 10px;
 }
+
 .formulario-registro input {
 	border-radius: 8px ;
 	width: 370px;
@@ -181,49 +218,18 @@ main {
 	color: #8267BE;
 }
 
-/* etiquetas cris */
-h2  {
-    font-family: ubuntu, 'sans serif'; 
-    font-size: 48px;
-	font-weight: 700;
-	padding-bottom: 32px;
+.facebook {
+	padding: 8px 16px 8px 16px;	
 }
 
-h3, h4, p, a {
-	font-family: roboto, 'sans serif';
+.google, .facebook {
+	background-color: #FFBD35;
+	border-radius: 9px;
+	margin: 16px;
 }
 
-h2, h3, h4, p {
-	color: #F8F8F8;
-	text-align: center;
-}
-
-h3 {
-    font-size: 32px;
-	padding-bottom: 32px;
-}
-
-h4 {
-    font-size: 28px;
-	max-width: 265px;
-	padding: 144px 8px 0px 21px;
-}
-
-p {
-    font-size: 20px;
-	font-weight: 300;
-	padding-bottom: 64px;
-	max-width: 800px;
-	margin: auto;
-}
-
-span {
-	font-weight: 700;
-}
-
-.texto_corto {
-max-width: 360px;
-margin: auto;
+.google{
+	padding: 11px;
 }
 
 /* sobre nosotros */
@@ -259,96 +265,16 @@ margin: auto;
 	padding: 80px 0px 64px 0px;
 }
 
+span {
+	font-weight: 700;
+}
+
+.texto_corto {
+max-width: 360px;
+margin: auto;
+}
+
 /*----Novedades----*/
-
-.presentacion h2 {
-	color: #000000;
-}
-
-.presentacion p {
-	color: #000000;
-}
-
-.presentacion {
-	text-align: center;
-	font-size: 182%;
-	margin-top: 91px;
-	margin-bottom: 137px;
-}
-
-.container p {
-	color: #F8f8f8;
-}
-
-.card-text, .card-title {
-	text-align: center;
-	display: flex;
-}
-
-.container h4 {
-	font-size: 20px;
-	color: #F8f8f8;	
-}
-
-.container .swiper-slide {
-	border-radius: 15px;
-	box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
-	margin-left: 59px;
-	width: 100px;
-}
-
-.container .swiper-slide img {
-	display: block;
-	object-fit: cover;
-	border-top-left-radius: 15px;
-	border-top-right-radius: 15px;
-	width: 100%;
-}
-
-.container .swiper-slide .card-description {
-	background-color: #3FA796;
-	border-bottom-right-radius: 30px;
-	border-bottom-left-radius: 30px;
-	width: 100%;
-}
-
-.container a {
-	padding-top: 15px;
-	padding-right: 23px;
-	padding-left: 23px;
-	padding-bottom: 15px;
-	display: inline-block;
-	align-content: flex-end;
-	color: #F8F8F8;
-	border: 1px solid #F8F8F8;
-	border-radius: 4px;
-}
-
-.container a:hover {
-	background: #F8F8F8;
-	color: #8267BE;
-}
-
-.swiper-slide:hover {
-	box-shadow: 7px 5px 20px rgba(0,0,0,0.4);
-	transform: translateY(-3%);
-}
-
-.swiper-slide {
-	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
-	transition: all 400ms ease-out;
-}
-
-.swiper-button-next, .swiper-button-prev {
-	background-color: #F8F8F8;
-	padding-left: 32px;
-	padding-right: 27px;
-	padding-top: 32px;
-	padding-bottom: 32px;
-	border-radius: 100px;
-	position: absolute;
-	margin-left: 5px;
-}
 
 /* nuestro barrio */
 .nuestro-barrio {
@@ -488,7 +414,7 @@ input, textarea, select, button {
 .continuar li {
 	font-size: 16px;
 	font-weight: 500;
-	padding: 8px 16px;
+	padding: 12px 24px;
 	text-decoration: none;
 	display: inline-block;
 	text-align: start;
@@ -558,12 +484,12 @@ input, textarea, select, button {
 }
 
 .card .contenido a {
-	padding: 10px;
+	padding: 8px 12px;
 	display: inline-block;
 	text-decoration: none;
 	color: #F8F8F8;
-	border: 1px solid #F8F8F8;
-	border-radius: 4px;
+	border: 2px solid #F8F8F8;
+	border-radius: 8px;
 	transition: all 400ms ease;
 	margin-left: 330px;
 }
@@ -646,12 +572,12 @@ input, textarea, select, button {
 }
 
 .contenido_back a {
-    padding: 10px;
+    padding: 12px 16px;
 	display: inline-block;
 	text-decoration: none;
 	color: #F8F8F8;
-	border: 1px solid #F8F8F8;
-	border-radius: 4px;
+	border: 2px solid #F8F8F8;
+	border-radius: 8px;
 	transition: all 400ms ease;
 }
 
@@ -684,7 +610,7 @@ input, textarea, select, button {
 	flex-direction: row;
 	list-style: none;
 	margin: 0px 0px 0px 0px;
-	}
+}
 
 .cards-fundacion {
 	background-color: #FFBD35;
@@ -700,14 +626,12 @@ input, textarea, select, button {
 .boton-fundacion {
 	width: 300px;
 	height: 48px;
-
 }
 
 .botonera-fund {
 	display: flex;
 	width: 1440px;
 	margin-left: 39px;
-	
 }
 
 .botonera-fund a {
@@ -719,11 +643,10 @@ input, textarea, select, button {
 	flex-direction: column;
 	border: solid 2px #F8F8F8;
 	color: #F8F8F8;
-	border-radius: 6px;
-	padding: 13px 20px 14px 20px;
+	border-radius: 8px;
+	padding: 13px 20px;
 	box-sizing: border-box;
 	margin: 24px 20px;
-		
 }
 
 .botonera-fund a:hover {
