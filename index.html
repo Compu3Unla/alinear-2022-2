@@ -11,15 +11,15 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img src="img/alinear-logo-blanco.svg" alt="logo-alinear">
+            <img src="img/alinear-logo-color.svg" alt="logo-alinear">
         </div>
         <nav>
             <ul class="list">                
-                <a href="#"><li>SOBRE NOSOTROS</li></a>
-                <a href="#"><li>NOVEDADES</li></a>
-                <a href="#"><li>NUESTRO BARRIO</li></a>
-                <a href="#"><li>CONCIENTICEMOS</li></a>
-                <a href="#"><li>COLABORAR</li></a>
+                <a href="#sobre_nosotros"><li>SOBRE NOSOTROS</li></a>
+                <a href="#novedades"><li>NOVEDADES</li></a>
+                <a href="#nuestro_barrio"><li>NUESTRO BARRIO</li></a>
+                <a href="#concienticemos"><li>CONCIENTICEMOS</li></a>
+                <a href="#fundacion"><li>COLABORAR</li></a>
             </ul>
         </nav> 
         <a href="#" class="boton-header">DONÁ ACÁ</a>
@@ -37,8 +37,8 @@
             <form class="registro">
                 <div class="formulario-registro">
 					<h3 class="titulo-formulario"> Iniciar sesión</h3>
-                    <input type="text" id="usuario" value="Usuario">
-                    <input type="text" id="contrasena" value="Contraseña">
+                    <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+                    <input type="text" name="contrasena" id="contrasena" placeholder="Contraseña">
 					<a class="inicia-sesion" href="#">INICIA SESIÓN</a>
 					<a class="inicia-sesion" href="#">REGISTRATE</a>
                   <p>O iniciá sesión con</p>
@@ -47,7 +47,7 @@
                 </div>
             </form>
         </section>
-        <div class="sobre_nosotros">
+        <section id="sobre_nosotros">
             <div>
                 <h2>Sobre nosotros</h2>
                 <p>Trabajamos para reducir el desperdicio de alimentos, concientizando a las personas
@@ -56,7 +56,7 @@
                 miles de personas del AMBA. </p>
             </div>
             <div class="containers">
-                <div class="corazones"><img src="img/img_corazonesamarillos.svg" alt="img-corazonesamarillos"></div>
+                <div class="corazones"><img src="img/img-corazonesamarillos.svg" alt="img-corazonesamarillos"></div>
                 <div class="container_violeta">
                     <h4 >Ayudar a quienes lo necesitan</h4>
                 </div>
@@ -69,58 +69,163 @@
                 <h3>¿C&oacute;mo lograr este objetivo?</h3>
                 <p>La tarea que realizamos todos los d&iacute;as es posible gracias al compromiso de distintas personas.
                 Por eso decimos que somos una gran cadena solidaria en la que cada parte es fundamental para cumplir
-                con nuestra misi&oacute;n.</p>
+                con nuestra misi&oacute;n. Cumplimos ésta labor junto a Banco de Alimentos, UNICEF Argentina y diferentes ONGs
+                y comedores comunitarios de toda la provincia de Buenos Aires.</p>
+                <video controls autoplay muted>
+                    <source src="banco-alimentos.mp4" type="video/mp4">
+                </video>
             </div>
-        </div>
+        </section>
 	   <!-- novedades -->
-    
-        <!-- nuestro barrio -->
-        <div class="nuestro-barrio">
-            <div>
-                <section class="presentacion-nb">
-                    <h2 class="h2barrio">Nuestro Barrio</h2>
-                    <p>Te invitamos a inscribir tu organización a Alinear, de esta manera vamos a poder estar más cerca de quienes lo necesitan</p>
-                </section>
+       <div class="novedades">
+        <div class="NovedadesP">
+               <section class="presentacion-Novedades">
+                   <h2> Novedades</h2>
+                   <p>Conocer lo que hacemos es una forma de ser parte. Enterate de nuestras últimas noticias, eventos y acciones</p>
+               </section>
+           </div>
+           <div class="container-card">
+          <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
+           <div class="Ncard">
+       <figure>
+           <img src="img/img-noticias1.svg" width="333px" height="237px" alt="foto-integrantes">
+       </figure>
+       <div class="contenido-card">
+           <h5>Record de donaciones</h5>
+           
+           <div class= "P-italic">
+           <p>“Sembrando Esperanzas”, de la localidad de Glew recibió una donación de más de 2000 alimentos no perecederos, lácteos y verduras..</p>
+           </div>
+               </div>
+               <div class="vermasnovedades">
+           <a href="#">Leer más</a>
+       </div>
+   </div>
+   <div class="Ncard">
+       <figure>
+           <img src="img/img-noticias2.svg" width="333px" height="237px" alt="foto-integrantes" >
+       </figure>
+       <div class="contenido-card">
+           <h5>Quilmes nos necesita</h5>
+           <div class= "P-italic">
+           <p>Varios merenderos de la zona de Quilmes Oeste requiere de atención inmediata. Muchos de los vecinos denuncian falta de ayuda del Estado..</p>
+           </div>
             </div>
-            <section class="container-mapa">
+               <div class="vermasnovedades">
+           <a href="#">Leer más</a>
+       </div>
+   </div>
+   <div class="Ncard">
+       <figure>
+           <img src="img/img-noticias3.svg" width="333px" height="237px" alt="foto-integrantes" >
+       </figure>
+       <div class="contenido-card">
+           <h5>Comedor comunitario</h5>
+           <div class= "P-italic">
+           <p>Logramos juntar casi 500 kilos de alimentos en la ultima colecta y nuestro objetivo es duplicar este numero para llegar a más comedores..</p>
+           </div>
+            </div>
+               <div class="vermasnovedades">
+           <a href="#">Leer más</a>
+       </div>
+   </div>  
+             <div class="Ncard">
+       <figure>
+           <img src="img/img-noticias4.svg" width="333px" height="237px" alt="foto-integrantes" >
+       </figure>
+       <div class="contenido-card">
+           <h5>La pandemia no da tregua</h5>
+           <div class= "P-italic">
+           <p>A más de un año de la pandemia ocasionada por el COVID 19, se duplicó la cantidad de personas atendidas por las organizaciones comunitarias</p>
+           </div>
+            </div>
+               <div class="vermasnovedades">
+           <a href="#">Leer más</a>
+       </div>
+   </div>
+   <div class="Ncard">
+       <figure>
+           <img src="img/img-noticias5.svg" width="333px" height="237px" alt="foto-integrantes" >
+       </figure>
+       <div class="contenido-card">
+           <h5>Entregaron donaciones</h5>
+           <div class= "P-italic">
+           <p>La Fundación Metas Compartidas encabezó una entrega de donaciones destinada a los niños que son pacientes del Hospital Dr. Ramón..</p>
+           </div>
+            </div>
+               <div class="vermasnovedades">
+           <a href="#">Leer más</a>
+       </div>
+   </div>
+   <div class="Ncard">
+       <figure>
+           <img src="img/img-noticias6.svg" width="333px" height="237px" alt="foto-integrantes">
+       </figure>
+       <div class="contenido-card">
+           <h5>Juntos somos mas</h5>
+           <div class= "P-italic">
+           <p>Lograr una donación extraordinaria de alimentos y productos de primera necesidad, que llegue a las mesas de miles de hogares  en..</p>
+           </div>
+            </div>
+               <div class="vermasnovedades">
+           <a href="#">Leer más</a>
+       </div>
+   </div>
+       </div>
+       </div>
+        <!-- nuestro barrio -->
+        <section id="nuestro-barrio">
+            <div class="presentacion-nb">
+                <h2 class="h2barrio">Nuestro Barrio</h2>
+                <p>Te invitamos a inscribir tu organización a Alinear, de esta manera vamos a poder estar más cerca de quienes lo necesitan</p>
+            </div>
+            <div class="container-mapa">
                 <h4>Colocá tu provincia, localidad o ciudad..</h4>
                 <div class="buscador">
+                    <section class="buscar">
+                        <form autocomplete="off">
+                            <div>
+                                <input type="text" name="q" placeholder="Buscar">
+                            </div>
+                        </form>
+                    </section>
                     <div class="mapa">
-                        <img src="img/mapa.svg" width="512" height="320" alt="mapita">
+                        <img src="img/img-mapa.svg" width="512" height="320" alt="img-mapa">
                     </div>
                 </div>
-            </section>
-            <section class="container-form">
+            </div>
+            <div class="container-form">
                 <h4>Datos de tu organización</h4>
                 <div class="formulario-org">
                     <form action="/my-handling-form-page" method="post">
                         <ul class="form-pau">
                             <li>
-                                <input type="text" id="name" value="Nombre de la organización">
+                                <input type="text" name="Nombre" id="nombre" placeholder="Nombre de la organización">
                             </li>
                             <li>
-                                <input type="text" id="CUIT" value="CUIT">
+                                <input type="text" name="cuit" id="cuit" placeholder="CUIT">
                             </li>
                             <li>
-                                <input type="text" id="lugar" value="Dirección donde presta servicio">
+                                <input type="text" name="lugar" id="lugar" placeholder="Dirección donde presta servicio">
                             </li>
                             <li>
-                                <input type="text" id="entrecalles" value="Entrecalles">
+                                <input type="text" name="calles" id="entrecalles" placeholder="Entrecalles">
                             </li>
                             <li>
-                                <input type="text" id="barrio" value="Barrio">
+                                <input type="text" name="barrio" id="barrio" placeholder="Barrio">
                             </li>
                             <li>
-                                <input type="text" id="localidad" value="Localidad">
+                                <input type="text" name="localidad" id="localidad" placeholder="Localidad">
                             </li>
                             <li>
-                                <input type="text" id="partido" value="Partido">
+                                <input type="text" name="partido" id="partido" placeholder="Partido">
                             </li>
                             <li>
-                                <input type="text" id="pregunta" value="¿Cómo te enteraste de alinear?">
+                                <input type="text" name="pregunta" id="pregunta" placeholder="¿Cómo te enteraste de alinear?">
                             </li>
                             <li>
-                                <input type="text" id="descrip" value="Descripción del servicio principal">
+                                <input type="text" name="descrip" id="descrip" placeholder="Descripción del servicio principal">
                             </li>
                             <li>
                                 <input type="checkbox" class="checkbox" value="first_checkbox"> Tengo el aval solicitado para mi organización
@@ -132,20 +237,21 @@
                         </ul>
                     </form>
                 </div>
-            </section>
-		</div>
+            </div>
+		</section>
+        <section id="concienticemos">
             <div class="subtitulo">
                 <h2>Concienticemos</h2>
             </div>
-            <div class="concienticemos">
+            <div class="concienticemos-contenido">
                 <div class="container_little">
                     <div class="card">
                         <figure>
                             <img src="img/img-cuidemoselplaneta.svg" alt="img-cuidemoselplaneta">
                         </figure>
                         <div class="iconos">
-                            <img src="img/icono_corazon.svg" alt="icono_corazon">
-                            <img src="img/icono_compartir.svg" alt="icono_compartir">
+                            <img src="img/icono-corazon.svg" alt="icono_corazon">
+                            <img src="img/icono-compartir.svg" alt="icono_compartir">
                         </div>
                         <div class="contenido">
                             <h4>10 maneras de ayudar a quiénes lo necesitan y a nuestro planeta</h4>
@@ -157,8 +263,8 @@
                             <img src="img/img-tapasplastico.svg" alt="img-tapasplastico">
                         </figure>
                         <div class="iconos">
-                            <img src="img/icono_corazon.svg" alt="icono_corazon">
-                            <img src="img/icono_compartir.svg" alt="icono_compartir">
+                            <img src="img/icono-corazon.svg" alt="icono_corazon">
+                            <img src="img/icono-compartir.svg" alt="icono_compartir">
                         </div>
                         <div class="contenido">
                             <h4>Reciclado tapitas plásticas para la Fundacion Garrahan</h4>
@@ -170,8 +276,8 @@
                             <img src="img/img-nodesperdicios.svg" alt="img-nodesperdicios">
                         </figure>
                         <div class="iconos">
-                            <img src="img/icono_corazon.svg" alt="icono_corazon">
-                            <img src="img/icono_compartir.svg" alt="icono_compartir">
+                            <img src="img/icono-corazon.svg" alt="icono_corazon">
+                            <img src="img/icono-compartir.svg" alt="icono_compartir">
                         </div>
                         <div class="contenido">
                             <h4>Consumo responsable: formas de evitar el desperdicio de alimentos</h4>
@@ -202,9 +308,10 @@
                     </div>
                 </div>
             </div>
-        <div class="fundacion">
-            <div>
-                <h3 class="colaborar-titulo">Colaborá con la fundación</h3>
+        </section>
+        <section id="fundacion">
+            <div class="contenido-fundacion">
+                <h2 class="fundacion-titulo">Colaborá con la fundación</h2>
                 <p>Frente a la emergencia sanitaria miles de chicos y chicas siguen necesitando de los comedores sociales para acceder a un plato de comida. 
                 Necesitamos tu aporte para poder seguir ayudando a estas instituciones.</p>
                 <div>
@@ -230,7 +337,7 @@
 					<a class="boton-fundacion" href="#">SER VOLUNTARIO</a>
 				</div>
             </div>
-        </div>
+        </section>
     </main>
     <footer>
         <div class="footer">
