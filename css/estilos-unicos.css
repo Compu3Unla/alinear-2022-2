@@ -909,3 +909,66 @@ footer {
 	margin-top: 24px;
 	text-align: center;
 }
+
+/* registrate */
+.Registrarte{
+	display: flex;
+	flex-direction: row;
+}
+.formu-novedades{
+	background: #3FA796;
+	margin-bottom: 45px;
+	padding-top: 32px;
+	padding-bottom: 37px;
+	padding-left: 3px;
+	margin-left: 45px;
+	margin-right: 47px;
+	border-radius: 31px;
+}
+.inicio-de-form{
+	color: #f8f8f8;
+}
+.datosP{
+	display: flex;
+	flex-direction: row;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.Nacimiento{
+	display: flex;
+	flex-direction: row;
+}
+.radio{
+	display: flex;
+	flex-direction: row;
+}
+.form-control{
+	margin-left: 16px;
+	margin-bottom: 19px;
+}
+.inicio-de-form h2, p{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	line-height: 1px;
+
+}
+.click-registro{
+	margin-top: 15px;
+	padding-bottom: 4px;
+	margin-bottom: 11px;
+}
+.form-check-input,.form-check-label {
+	display: flex;
+	flex-direction: column;
+	padding-top: 28px;
+}
+.btn-primary{
+	margin-top: 64px;
+}
+.font-weight-bold{
+	color: #f8f8f8;
+}
+.radio{
+	color:#FFFFFF;
+}
