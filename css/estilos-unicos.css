@@ -39,8 +39,9 @@ main {
 }
 
 .logo img {
-	margin: 0px 154px 0px 48px;
+	margin: 0px 150px 0px 48px;
 	border-radius: 0px;
+	width: auto;
 } 
 
 .header nav .list {
@@ -83,6 +84,49 @@ main {
 	margin-left: 44px;
 	border-radius: 0px;
 }
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+  width: 46px;
+  height: 46px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  width: 262px;
+  height: 267px;
+  background-color: #3FA796;
+  list-style: none;
+  padding: 30px 0px 0px 12px;
+  border-radius: 0px 0px 12px 12px;
+	
+
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  padding: 5px;
+  text-decoration: none;
+  color: #F1F1F1;
+  font-weight: 500;
+  font-family: roboto;
+  font-size: 16px;
+}
+
+.icono-perfil {
+	width: 46px;
+	height: 46px;
+	background-color: transparent;
+	border: none;
+	margin-left: 32px;
+}
+
+
 
 /* Home */
 .home {
@@ -744,7 +788,7 @@ input, textarea, select, button {
 .titulo-contribuir h2 {
     font-family: ubuntu, 'sans serif'; 
     font-size: 48px;
-	color: #1e1e1e;
+	color: black;
 	text-align: center;
 	font-weight: 700;
 	padding-bottom: 32px;
@@ -786,15 +830,28 @@ input, textarea, select, button {
 	background-color: #8267BE;
 }
 
+.botonera li {
+	display: inline-block;
+	text-decoration: none;
+	padding: 17px 102px;
+	border: 3px solid white;
+	border-radius: 14px;
+	font-family: roboto;
+	font-size: 32px;
+	margin: 16px;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+	color: #F8F8F8;
+}
+
 .botones-cantidad li:hover {
 	background: #F8F8F8;
 	color: #8267BE;
 }
 
-.titulo-contribuir h2 {
+.titulo-contribuir {
 	font-family: ubuntu;
-	color: black;
-	font-size: 36px;
+	color: #1E1E1E;
+	font-size: 48px;
 	text-align: center;
 	padding: 10px;
 }
@@ -821,11 +878,10 @@ input, textarea, select, button {
 	font-size: 32px;
 	margin: 16px;
 	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+	padding-top: 60px;
 }
 
 .parrafo {
-	width: 858px;
-	height: 112px;
 	display: flex;
 	float: left;
 	margin-left: 30px;
@@ -850,26 +906,27 @@ input, textarea, select, button {
 .continuar-contribuir {
 	width: 251px;
 	height: 80px;
-	padding-top: 25px;
-	padding-left: 20px;
-	display: inline-block;
-	background-color: white;
+	background-color: #F8F8F8;
 	font-family: roboto;
 	font-size: 24px;
 	font-weight:500;
 	text-align: left;
 	color: #3FA796;
 	border-radius: 10px;
-	margin-left: 80px;
-	margin-top: 70px;
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 70px;
+	margin-top: 40px;
 }
 
-.boton-continuar {
-	position: relative;
+.continuar-contribuir li {
+	list-style: none;
+	padding-top: 25px;
+	padding-right: 20px;
 }
 
 .flecha {
-	position: absolute;
+	display:flex;
 	width: 80px;
 	height: 80px;
 }
@@ -917,6 +974,28 @@ input, textarea, select, button {
 	height: 100%;
 	position: fixed;
 	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.checkbox-contribuir {
+	width: 15px;
+	height: 15px;
+	color: transparent;
+	border-style: hidden;
+}
+
+.texto-check {
+	font-family: roboto;
+	font-size: 20px;
+	font-weight: 300;
+	list-style: none;
+	color: #F8F8F8;	
+}
+
+.texto-check li {
+	max-width: 280px;
+	display: flex;
+	flex-direction: column;
+	text-align: left;	
 }
 
 /* footer */
