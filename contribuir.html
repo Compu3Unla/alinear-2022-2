@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <img src="img/alinear-logo-blanco.svg" alt="logo-alinear">
+            <img src="img/alinear-logo-color.svg" alt="logo-alinear">
         </div>
         <nav>
             <ul class="list">                
@@ -23,10 +23,16 @@
             </ul>
         </nav> 
         <a href="#" class="boton-header">DONÁ ACA</a>
-        <div class="imagenes-header">
-            <img src="img/icono-perfil.svg" alt="icono-perfil">
-            <img src="img/icono-hamburguesa.svg" alt="icono-hamburguesa">
-        </div>
+		<div class="dropdown">
+  <button class="icono-perfil"><img src="img/icono-perfil.svg" alt="icono-perfil"></button>
+  <div class="dropdown-content">
+  <a href="#">PREGUNTAS FRECUENTES</a>
+  <a href="#">COMUNIDAD</a>
+  <a href="#">NOTIFICACIONES</a>
+  <a href="#">AYUDA</a>
+  <a href="#">AJUSTES</a>
+  <a href="#">CERRAR SESIÓN</a>
+  </div>
     </header>
     <main>
         <div class="contribuir">
@@ -34,7 +40,7 @@
             <section class="contenedor1">
                 <article>
                     <div class="botones-cantidad">
-                        <ul clas="botonera">
+                        <ul class="botonera">
                             <a href="#"><li>500</li></a>
                             <a href="#"><li>750</li></a>
                             <a href="#"><li>1000</li></a>
@@ -47,14 +53,28 @@
                         infantil, podes donar lo que te parezca, los fondos son usados íntegramente para comprar alimentos 
                         para comedores infantiles y en campañas de concientización para el uso eficiente de los recursos
                         alimenticios.</p>
+						<li class="texto-check">
+                        <input type="checkbox" class="checkbox-contribuir" value="first_checkbox"> Activar donación automática
+                        </li>
                         <div class="boton-continuar">
-                            <a href="#"><li class="continuar-contribuir">CONTINUAR</li></a>
+                        	<div class="continuar-contribuir"><li>CONTINUAR</li><a href="#"></a>
                             <div class="flecha"><img src="img/icono-flecha.svg"></div>
-                        </div>
+                        	</div>
+						</div>  
                     </aside>
                 </article>
             </section>
         </div>
+        <section class="background-blur">
+            <div class="popup">
+                    <a href="#" class="btn-close">X</a>
+                    <div class="container-text">
+                        <h3>Te has registrado con éxito</h3>
+                        <p>¡Para continuar seleccioná volver a inicio y podrás navegar en la web libremente!</p>
+                    </div>
+                <a href="#" class="btn-volver">VOLVER A INICIO</a>
+            </div>
+        </section>
     </main>
     <footer>
         <div class="footer">
