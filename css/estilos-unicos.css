@@ -93,16 +93,15 @@ main {
 }
 .dropdown-content {
   display: none;
-  position: absolute;
   overflow: auto;
-  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-  width: 262px;
-  height: 267px;
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.4);
+  width: 180px;
+  height: 207px;
   background-color: #3FA796;
   list-style: none;
   padding: 30px 0px 0px 12px;
   border-radius: 0px 0px 12px 12px;
-	
+  margin-top: 19px;
 
 }
 .dropdown:hover .dropdown-content {
@@ -115,7 +114,8 @@ main {
   color: #F1F1F1;
   font-weight: 500;
   font-family: roboto;
-  font-size: 16px;
+  font-size: 12px;
+	line-height: normal;
 }
 
 .icono-perfil {
@@ -886,6 +886,7 @@ input, textarea, select, button {
 	float: left;
 	margin-left: 30px;
 	margin-top: 50px;
+	max-height: 400px;
 }
 
 .contribuir p {
@@ -896,7 +897,9 @@ input, textarea, select, button {
 	text-align: center;
 	line-height: 30px;
 	max-width: 860px;
+	max-height: 175px;
 	margin: auto;
+	padding-bottom: 10px;
 }
 
 .contribuir span {
