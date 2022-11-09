@@ -5,6 +5,7 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
+	text-decoration: none;
 }
 
 body {
@@ -40,6 +41,7 @@ main {
 .logo img {
 	margin: 0px 150px 0px 48px;
 	border-radius: 0px;
+	width: auto;
 } 
 
 .header nav .list {
@@ -52,7 +54,6 @@ main {
 	font-family: roboto;
 	font-weight: 500;
 	color: #F8F8F8;
-	text-decoration: none;
 }
 
 .list ul a {
@@ -72,7 +73,6 @@ main {
 	padding: 12px 24px;
 	border-radius: 8px;
 	cursor: pointer;
-	text-decoration: none;
 	margin-left: 20px;
 }
 
@@ -149,7 +149,6 @@ h2  {
     font-family: ubuntu, 'sans serif'; 
     font-size: 48px;
 	font-weight: 700;
-	padding-bottom: 32px;
 	text-align: center;
 }
 
@@ -248,7 +247,6 @@ p {
 .formulario-registro a {
 	padding: 13px;
 	display: flex;
-	text-decoration: none;
 	justify-content: center;
 	color: #F8F8F8;
 	border: 3px solid #F8F8F8;
@@ -276,10 +274,11 @@ p {
 }
 
 /* sobre nosotros */
-.sobre_nosotros {
+#sobre_nosotros {
     background-color: #3FA796;
     padding: 98px 0px 24px 0px;
     text-align: center;
+	height: 1540px;
 }
 
 .containers {
@@ -313,17 +312,105 @@ span {
 }
 
 .texto_corto {
-max-width: 360px;
-margin: auto;
-}
+	max-width: 360px;
+	margin: auto;
+	}
 
 /*----Novedades----*/
-
+.presentacion-Novedades p, h2{
+	color: #000000;	
+}
+.novedades{
+	margin-top: 182px;
+	margin-left: 20px;
+	margin-bottom: 140px;
+}
+.container-card{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+.contenido-card{
+	padding-bottom: 142px;
+}
+.Ncard{
+	margin: 20px;
+	border-radius: 31px;
+	background-color: #3FA796;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+	left: 704px;
+	padding-bottom: 28px;
+	width: 100%;
+	height: 100%;
+}
+.Ncard:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-5%);
+}
+.Ncard img{
+	border-top-left-radius: 31px;
+	border-top-right-radius: 31px;
+}
+.contenido-card{
+	text-align: center;
+}
+.Ncard .contenido-card h5{
+	padding: 16px 0px;
+	font-family: roboto;
+	font-style: bold;
+	color: #FFFFFF;
+	font-size: 24px;
+}
+.P-italic{
+	font-family: roboto;
+	font-size: 16px;
+	font-style: italic;
+}
+.Ncard .contenido-card p{
+	margin-left: 11px;
+	margin-right: 11px;
+	padding-bottom: 0px;
+}
+.vermasnovedades{
+	display: flex;
+	align-content: flex-end;
+}
+.vermasnovedades a{
+	color: #f8f8f8;
+	border: 2px solid #F8F8F8;
+	border-radius: 6px;
+	padding-right: 12px;
+	padding-left: 12px;
+	margin-left: 22px;
+	padding-top: 8px;
+	margin-bottom: 25px;
+	padding-bottom: 8px;
+}
+.vermasnovedades a:hover{
+	background: #ffffff;
+	color: #3FA796;
+}
+.container-card{
+	position: relative;
+}
+.swiper-button-next,.swiper-button-prev{
+	background-color: #f8f8f8;
+	position: absolute;
+	left: 268px;
+	top: 235px;
+	border-radius: 30px;
+	padding-left: 24px;
+	padding-right: 32px;
+	padding-top: 37px;
+	padding-bottom: 35px;
+}
 /* nuestro barrio */
-.nuestro-barrio {
+#nuestro-barrio {
+	background-color: #3FA796;
 	height: 990px;
 	width: 100%;
-	background-color: #3FA796;	
 }
 
 .h2barrio {
@@ -458,7 +545,6 @@ input, textarea, select, button {
 	font-size: 16px;
 	font-weight: 500;
 	padding: 12px 24px;
-	text-decoration: none;
 	display: inline-block;
 	text-align: start;
 	color: #F8F8F8;
@@ -472,7 +558,6 @@ input, textarea, select, button {
 	color: #8267BE;
 }
 
-
 #name,#CUIT,#lugar,#entrecalles,#barrio,#localidad,#partido,#pregunta,#descrip {
 	font-size: 14px;
 	color: #9E9E9E;
@@ -480,7 +565,11 @@ input, textarea, select, button {
 }
 
 /* concienticemos */
-.concienticemos {
+#concienticemos {
+	height: 958px;
+}
+	
+.concienticemos-contenido {
 	display: inline-flex;
 	flex-direction: row;
 }
@@ -529,7 +618,6 @@ input, textarea, select, button {
 .card .contenido a {
 	padding: 8px 12px;
 	display: inline-block;
-	text-decoration: none;
 	color: #F8F8F8;
 	border: 2px solid #F8F8F8;
 	border-radius: 8px;
@@ -617,7 +705,6 @@ input, textarea, select, button {
 .contenido_back a {
     padding: 12px 16px;
 	display: inline-block;
-	text-decoration: none;
 	color: #F8F8F8;
 	border: 2px solid #F8F8F8;
 	border-radius: 8px;
@@ -630,21 +717,22 @@ input, textarea, select, button {
 }
 
 /* colabora con la fundacion */
-.fundacion {
+#fundacion {
 	background-color: #3FA796;
 	width: 1440px;
 	height: 666px;
 }
 
-.fundacion h2 {
+.contenido-fundacion h2 {
 	font-family: ubuntu;
 	font-size: 48px;
-	padding-top: 80px;
+	padding: 64x 0px;
 }
 
-.fundacion p {
+.contenido-fundacion p {
 	padding-top: 24px;
 	max-width: 1000px;
+	text-align: center;
 }
 
 .container-fundacion {
@@ -678,7 +766,6 @@ input, textarea, select, button {
 }
 
 .botonera-fund a {
-	text-decoration: none;
 	font-size: 16px;
 	font-weight: 500;
 	text-align: center;
@@ -766,6 +853,31 @@ input, textarea, select, button {
 	color: #1E1E1E;
 	font-size: 48px;
 	text-align: center;
+	padding: 10px;
+}
+
+.botonera ul {
+	list-style: none;
+	padding-top: 20px;
+	font-size: 12px;
+	text-align: center;	
+}
+
+.botonera ul li {
+	display: inline;
+}
+
+.botonera ul a li {
+	width: 239px;
+	height: 72px;
+	color: #F8F8F8;
+	padding: 17px 102px;
+	border: 3px solid white;
+	border-radius: 14px;
+	font-family: roboto;
+	font-size: 32px;
+	margin: 16px;
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 	padding-top: 60px;
 }
 
@@ -822,12 +934,56 @@ input, textarea, select, button {
 	height: 80px;
 }
 
+.popup {
+	margin: 300px;
+	background-color: #3FA796;
+	width: 810px;
+	height: 404px;
+	border-radius: 30px;
+}
+
+.btn-close {
+	align-items: flex-end;
+	padding: 8px 12px;
+	background-color: #1e1e1e;
+	border-radius: 100%;
+	color: #F8F8F8;
+}
+
+.container-text {
+	padding: 64px;
+	text-align: center;
+	max-width: 580px;
+	margin: auto;
+}
+
+.btn-volver a {
+	padding: 64px 14px;
+	font-size: 16px;
+	font-weight: 500;
+	border: solid 2px #F8F8F8;
+	color: #F8F8F8;
+	border-radius: 8px;
+	margin: 24px;
+}
+
+.btn-volver a:hover {
+	background-color: #F8F8F8;
+	color: #3FA796;
+}
+
+.background-blur {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
 .checkbox-contribuir {
 	width: 15px;
 	height: 15px;
 	color: transparent;
 	border-style: hidden;
-	
 }
 
 .texto-check {
