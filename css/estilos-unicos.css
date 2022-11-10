@@ -84,6 +84,7 @@ main {
 	background: #F8F8F8;
 	color: #3FA796;
 }
+
 .imagenes-header img {
 	margin-left: 44px;
 	border-radius: 0px;
@@ -95,6 +96,7 @@ main {
   width: 46px;
   height: 46px;
 }
+
 .dropdown-content {
   display: none;
   overflow: auto;
@@ -106,12 +108,20 @@ main {
   padding: 30px 0px 0px 12px;
   border-radius: 0px 0px 12px 12px;
   margin-top: 19px;
-
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 .dropdown-content a {
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	color: #F1F1F1;
+	font-weight: 500;
+	font-family: roboto;
+	font-size: 12px;
   display: block;
   padding: 5px;
   text-decoration: none;
@@ -134,7 +144,7 @@ main {
 .home {
 	display: flex;
 	justify-content: center;	
-	background-image: url("/img/foto-portada.jpg");
+	background: url('img-portada.jpg');
 	background-repeat: no-repeat;	
 	height: 810px;
 }
@@ -152,6 +162,7 @@ h2  {
     font-size: 48px;
 	font-weight: 700;
 	text-align: center;
+	padding: 64px 0px;
 }
 
 h3, h4, p, a {
@@ -178,8 +189,9 @@ p {
     font-size: 20px;
 	font-weight: 300;
 	padding-bottom: 64px;
-	max-width: 800px;
+	max-width: 936px;
 	margin: auto;
+	text-align: center;
 }
 
 .texto-portada {
@@ -276,9 +288,8 @@ p {
 }
 
 /* sobre nosotros */
-#sobre_nosotros {
+#sobre-nosotros {
     background-color: #3FA796;
-    padding: 98px 0px 24px 0px;
     text-align: center;
 	height: 1540px;
 }
@@ -319,67 +330,67 @@ span {
 	}
 
 /*----Novedades----*/
-.presentacion-Novedades p, h2{
+#novedades {
+	margin-bottom: 48px;
+}
+
+.presentacion-novedades p h2 {
 	color: #000000;	
 }
-.novedades{
-	margin-top: 182px;
-	margin-left: 20px;
-	margin-bottom: 140px;
-}
-.container-card{
+
+.container-card {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 }
-.contenido-card{
-	padding-bottom: 142px;
-}
-.Ncard{
-	margin: 20px;
-	border-radius: 31px;
+
+.Ncard {
+	margin: 24px;
+	border-radius: 30px;
 	background-color: #3FA796;
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
 	transition: all 400ms ease-out;
 	cursor: default;
-	left: 704px;
-	padding-bottom: 28px;
-	width: 100%;
-	height: 100%;
+	width: 332px;
+	height: 447px;
 }
-.Ncard:hover{
+
+.Ncard:hover {
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
 	transform: translateY(-5%);
 }
-.Ncard img{
-	border-top-left-radius: 31px;
-	border-top-right-radius: 31px;
+
+.Ncard img {
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
 }
-.contenido-card{
-	text-align: center;
-}
-.Ncard .contenido-card h5{
+
+.Ncard .contenido-card h5 {
 	padding: 16px 0px;
 	font-family: roboto;
-	font-style: bold;
+	font-weight: 700;
 	color: #FFFFFF;
 	font-size: 24px;
 }
-.P-italic{
+
+.P-italic {
 	font-family: roboto;
 	font-size: 16px;
 	font-style: italic;
 }
-.Ncard .contenido-card p{
+
+/* .Ncard .contenido-card p{
 	margin-left: 11px;
 	margin-right: 11px;
 	padding-bottom: 0px;
 }
-.vermasnovedades{
+ */
+.vermasnovedades {
 	display: flex;
 	align-content: flex-end;
 }
-.vermasnovedades a{
+
+.vermasnovedades a {
 	color: #f8f8f8;
 	border: 2px solid #F8F8F8;
 	border-radius: 6px;
@@ -390,14 +401,17 @@ span {
 	margin-bottom: 25px;
 	padding-bottom: 8px;
 }
-.vermasnovedades a:hover{
+
+.vermasnovedades a:hover {
 	background: #ffffff;
 	color: #3FA796;
 }
-.container-card{
+
+.container-card {
 	position: relative;
 }
-.swiper-button-next,.swiper-button-prev{
+
+.swiper-button-next,.swiper-button-prev {
 	background-color: #f8f8f8;
 	position: absolute;
 	left: 268px;
@@ -408,11 +422,11 @@ span {
 	padding-top: 37px;
 	padding-bottom: 35px;
 }
+
 /* nuestro barrio */
 #nuestro-barrio {
 	background-color: #3FA796;
-	height: 990px;
-	width: 100%;
+	padding-bottom: 48px;
 }
 
 .h2barrio {
@@ -456,23 +470,34 @@ span {
 	padding: 0px 0px 24px 0px;
 }
 
-.buscador {
-	height: 46px;
-	width: 502px;
-	background-color: white;
+.icono-buscador {
+	background-image: url(/alinear-2022-2-Rocio-registrame/img/icono-buscar.png);
+	background-repeat: no-repeat;
+	background-position: 4px center;
+	background-size: 24px;
 	display: flex;
-	flex-direction: column;
-	border-radius: 10px;
+	align-items: center;
+	width: 513px;
+	padding-left: 32px;
+	height: 30px;
 }
 
-.buscador input {
-	height: 46px;
-	width: 502px;
+.input-icono input {
+	width: 100%;
+	font-size: 0.9em;
+	border: none;
 }
 
 .mapa {
 	display: flex;
-	padding-top: 60px;
+	padding-top: 32px;
+}
+
+#map {
+	height: 500px;
+	width: 96%;
+	margin-top: 32px;
+	border-radius: 24px;
 }
 
 .container-form {
@@ -521,7 +546,7 @@ form li + li {
 }
 
 input,textarea {
-  font: 1em roboto;
+  
   height: 35px;
   box-sizing: border-box;
   border-radius: 5px;
@@ -560,7 +585,7 @@ input, textarea, select, button {
 	color: #8267BE;
 }
 
-#name,#CUIT,#lugar,#entrecalles,#barrio,#localidad,#partido,#pregunta,#descrip {
+#name,#CUIT,#lugar,#entrecalles,#barrio,#localidad,#partido,#pregunta,#descrip,#buscar {
 	font-size: 14px;
 	color: #9E9E9E;
 	padding: 12px;
@@ -1070,10 +1095,8 @@ footer {
 .inicio-de-form h2, p{
 	display: flex;
 	flex-direction: column;
-	text-align: left;
-	line-height: 1px;
-
 }
+
 .click-registro{
 	margin-top: 15px;
 	padding-bottom: 4px;
@@ -1093,6 +1116,31 @@ footer {
 .radio{
 	color:#FFFFFF;
 }
+
+@media screen and (max-width: 600px) {
+	
+	body {
+		margin: 0px;
+		padding: 0px		
+	}
+	
+	.home {
+		display: flex;
+		flex-direction: column;
+		margin: 0px;
+		justify-content: center;		
+	}
+	
+	.registro {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: auto;
+	}
+	
+	.formulario-registro #usuario, #contrasena {
+		width: 390px;
+		height: 41px;
 
 /* ........... */
 
@@ -1189,8 +1237,6 @@ tex-decoration: underline;
 color: #8267BE;
 font-weigth: 500;
 }
-
-@media screen and (max-width: 600px) {
 	
 	body {
 	margin: 0px;
@@ -1263,8 +1309,7 @@ font-weigth: 500;
 	
 	input, textarea, select, button {
 		width: 535px;
-}
-
+  }
 	.concienticemos {
 		display: flex;
 		flex-direction: column;
