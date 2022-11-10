@@ -80,6 +80,7 @@ main {
 	background: #F8F8F8;
 	color: #3FA796;
 }
+
 .imagenes-header img {
 	margin-left: 44px;
 	border-radius: 0px;
@@ -91,31 +92,33 @@ main {
   width: 46px;
   height: 46px;
 }
+
 .dropdown-content {
   display: none;
-  position: absolute;
   overflow: auto;
-  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-  width: 262px;
-  height: 267px;
+  box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.4);
+  width: 180px;
+  height: 207px;
   background-color: #3FA796;
   list-style: none;
   padding: 30px 0px 0px 12px;
   border-radius: 0px 0px 12px 12px;
-	
-
+  margin-top: 19px;
 }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
+
 .dropdown-content a {
-  display: block;
-  padding: 5px;
-  text-decoration: none;
-  color: #F1F1F1;
-  font-weight: 500;
-  font-family: roboto;
-  font-size: 16px;
+	display: block;
+	padding: 5px;
+	text-decoration: none;
+	color: #F1F1F1;
+	font-weight: 500;
+	font-family: roboto;
+	font-size: 12px;
+	line-height: normal;
 }
 
 .icono-perfil {
@@ -126,13 +129,11 @@ main {
 	margin-left: 32px;
 }
 
-
-
 /* Home */
 .home {
 	display: flex;
 	justify-content: center;	
-	background-image: url(/img/foto-portada.jpg);
+	background: url('img-portada.jpg');
 	background-repeat: no-repeat;	
 	height: 810px;
 }
@@ -150,6 +151,7 @@ h2  {
     font-size: 48px;
 	font-weight: 700;
 	text-align: center;
+	padding: 64px 0px;
 }
 
 h3, h4, p, a {
@@ -176,8 +178,9 @@ p {
     font-size: 20px;
 	font-weight: 300;
 	padding-bottom: 64px;
-	max-width: 800px;
+	max-width: 936px;
 	margin: auto;
+	text-align: center;
 }
 
 .texto-portada {
@@ -274,9 +277,8 @@ p {
 }
 
 /* sobre nosotros */
-#sobre_nosotros {
+#sobre-nosotros {
     background-color: #3FA796;
-    padding: 98px 0px 24px 0px;
     text-align: center;
 	height: 1540px;
 }
@@ -317,67 +319,67 @@ span {
 	}
 
 /*----Novedades----*/
-.presentacion-Novedades p, h2{
+#novedades {
+	margin-bottom: 48px;
+}
+
+.presentacion-novedades p h2 {
 	color: #000000;	
 }
-.novedades{
-	margin-top: 182px;
-	margin-left: 20px;
-	margin-bottom: 140px;
-}
-.container-card{
+
+.container-card {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 }
-.contenido-card{
-	padding-bottom: 142px;
-}
-.Ncard{
-	margin: 20px;
-	border-radius: 31px;
+
+.Ncard {
+	margin: 24px;
+	border-radius: 30px;
 	background-color: #3FA796;
 	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
 	transition: all 400ms ease-out;
 	cursor: default;
-	left: 704px;
-	padding-bottom: 28px;
-	width: 100%;
-	height: 100%;
+	width: 332px;
+	height: 447px;
 }
-.Ncard:hover{
+
+.Ncard:hover {
 	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
 	transform: translateY(-5%);
 }
-.Ncard img{
-	border-top-left-radius: 31px;
-	border-top-right-radius: 31px;
+
+.Ncard img {
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
 }
-.contenido-card{
-	text-align: center;
-}
-.Ncard .contenido-card h5{
+
+.Ncard .contenido-card h5 {
 	padding: 16px 0px;
 	font-family: roboto;
-	font-style: bold;
+	font-weight: 700;
 	color: #FFFFFF;
 	font-size: 24px;
 }
-.P-italic{
+
+.P-italic {
 	font-family: roboto;
 	font-size: 16px;
 	font-style: italic;
 }
-.Ncard .contenido-card p{
+
+/* .Ncard .contenido-card p{
 	margin-left: 11px;
 	margin-right: 11px;
 	padding-bottom: 0px;
 }
-.vermasnovedades{
+ */
+.vermasnovedades {
 	display: flex;
 	align-content: flex-end;
 }
-.vermasnovedades a{
+
+.vermasnovedades a {
 	color: #f8f8f8;
 	border: 2px solid #F8F8F8;
 	border-radius: 6px;
@@ -388,14 +390,17 @@ span {
 	margin-bottom: 25px;
 	padding-bottom: 8px;
 }
-.vermasnovedades a:hover{
+
+.vermasnovedades a:hover {
 	background: #ffffff;
 	color: #3FA796;
 }
-.container-card{
+
+.container-card {
 	position: relative;
 }
-.swiper-button-next,.swiper-button-prev{
+
+.swiper-button-next,.swiper-button-prev {
 	background-color: #f8f8f8;
 	position: absolute;
 	left: 268px;
@@ -406,11 +411,11 @@ span {
 	padding-top: 37px;
 	padding-bottom: 35px;
 }
+
 /* nuestro barrio */
 #nuestro-barrio {
 	background-color: #3FA796;
-	height: 990px;
-	width: 100%;
+	padding-bottom: 48px;
 }
 
 .h2barrio {
@@ -454,23 +459,34 @@ span {
 	padding: 0px 0px 24px 0px;
 }
 
-.buscador {
-	height: 46px;
-	width: 502px;
-	background-color: white;
+.icono-buscador {
+	background-image: url(/alinear-2022-2-Rocio-registrame/img/icono-buscar.png);
+	background-repeat: no-repeat;
+	background-position: 4px center;
+	background-size: 24px;
 	display: flex;
-	flex-direction: column;
-	border-radius: 10px;
+	align-items: center;
+	width: 513px;
+	padding-left: 32px;
+	height: 30px;
 }
 
-.buscador input {
-	height: 46px;
-	width: 502px;
+.input-icono input {
+	width: 100%;
+	font-size: 0.9em;
+	border: none;
 }
 
 .mapa {
 	display: flex;
-	padding-top: 60px;
+	padding-top: 32px;
+}
+
+#map {
+	height: 500px;
+	width: 96%;
+	margin-top: 32px;
+	border-radius: 24px;
 }
 
 .container-form {
@@ -519,7 +535,7 @@ form li + li {
 }
 
 input,textarea {
-  font: 1em roboto;
+  
   height: 35px;
   box-sizing: border-box;
   border-radius: 5px;
@@ -558,7 +574,7 @@ input, textarea, select, button {
 	color: #8267BE;
 }
 
-#name,#CUIT,#lugar,#entrecalles,#barrio,#localidad,#partido,#pregunta,#descrip {
+#name,#CUIT,#lugar,#entrecalles,#barrio,#localidad,#partido,#pregunta,#descrip,#buscar {
 	font-size: 14px;
 	color: #9E9E9E;
 	padding: 12px;
@@ -886,6 +902,7 @@ input, textarea, select, button {
 	float: left;
 	margin-left: 30px;
 	margin-top: 50px;
+	max-height: 400px;
 }
 
 .contribuir p {
@@ -896,7 +913,9 @@ input, textarea, select, button {
 	text-align: center;
 	line-height: 30px;
 	max-width: 860px;
+	max-height: 175px;
 	margin: auto;
+	padding-bottom: 10px;
 }
 
 .contribuir span {
@@ -1026,4 +1045,202 @@ footer {
 	text-align: center;
 }
 
-/* @media */
+/* registrate */
+.Registrarte{
+	display: flex;
+	flex-direction: row;
+}
+.formu-novedades{
+	background: #3FA796;
+	margin-bottom: 45px;
+	padding-top: 32px;
+	padding-bottom: 37px;
+	padding-left: 3px;
+	margin-left: 45px;
+	margin-right: 47px;
+	border-radius: 31px;
+}
+.inicio-de-form{
+	color: #f8f8f8;
+}
+.datosP{
+	display: flex;
+	flex-direction: row;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.Nacimiento{
+	display: flex;
+	flex-direction: row;
+}
+.radio{
+	display: flex;
+	flex-direction: row;
+}
+.form-control{
+	margin-left: 16px;
+	margin-bottom: 19px;
+}
+.inicio-de-form h2, p{
+	display: flex;
+	flex-direction: column;
+}
+.click-registro{
+	margin-top: 15px;
+	padding-bottom: 4px;
+	margin-bottom: 11px;
+}
+.form-check-input,.form-check-label {
+	display: flex;
+	flex-direction: column;
+	padding-top: 28px;
+}
+.btn-primary{
+	margin-top: 64px;
+}
+.font-weight-bold{
+	color: #f8f8f8;
+}
+.radio{
+	color:#FFFFFF;
+}
+
+@media screen and (max-width: 600px) {
+	
+	body {
+		margin: 0px;
+		padding: 0px		
+	}
+	
+	.home {
+		display: flex;
+		flex-direction: column;
+		margin: 0px;
+		justify-content: center;		
+	}
+	
+	.registro {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: auto;
+	}
+	
+	.formulario-registro #usuario, #contrasena {
+		width: 390px;
+		height: 41px;
+	}
+	
+	.titulo-formulario {
+		padding-top: 46px;
+	}
+	
+	.texto-portada {
+		margin: 0px;
+	}
+	
+	h2 {
+		font-size: 3em;
+	}
+	
+	p {
+		font-size: 1.2em;
+		margin: 24px;
+	} 
+	
+	.container_violeta {
+		width: 200px;
+		height: 185px;
+	}
+	
+	h4 {
+		font-size: 1.4em;
+		padding: 100px 8px 0px 12px;
+	}
+
+	.corazones img {
+		width: 80%;
+	}
+	
+	.nuestro-barrio {
+		display: flex;
+		flex-direction: column;
+		height: 1400px;
+	}
+
+	.container-mapa {
+		margin-left: 46px;
+	}
+	
+	.container-form {
+      	margin-left: 34px;
+	}
+	
+	input, textarea, select, button {
+		width: 535px;
+	}
+
+	.concienticemos {
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.card {
+		width: 552px;
+		height: 170px;
+	}
+	
+	.card_front, .card_back {
+		width: 552px;
+		height: 576px;
+	}
+	
+	.card img {
+		width: 197px;
+		height: 170px;
+	}
+	
+	.card h4 {
+		font-size: 1em;
+		text-align: center;
+		max-width: 300px;
+	}
+	
+	.fundacion {
+		width: auto;
+		height: 799px;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.fundacion h2 {
+		font-size: 2.9em;
+		margin: 0px 4px;
+	}
+	
+	.fundacion p {
+		text-align: center;
+		padding: 0px 10px;
+	}
+	
+	.container-fundacion {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	
+	.cards-fundacion {
+		width: 223px;
+		height: 175px;
+	}
+	
+	.cards-fundacion img {
+		height: 92%;
+	}
+	
+	.botonera-fund a {
+		width: 264px;
+		height: 46px;
+		justify-content: center;
+	}
+}
