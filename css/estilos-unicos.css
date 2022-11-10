@@ -1032,3 +1032,42 @@ footer {
 	display:flex;
 	flex-direction: column;
 }
+/* ........ */
+
+/* confirmaridentidad */
+.Formulario-identidad{
+	background: #3fa796;
+	width: 1144px;
+	height: 438px;
+	margin-bottom: 51px;
+	padding-top: 27px;
+	margin-left: 57px;
+	margin-right: 57px;
+	border-radius: 33px;
+}
+.Registrar-tarjeta h2{
+	margin-top: 37px;
+}
+/* ........ */
+
+/* migasdepan */
+.breadcrumbs {
+padding: 10px; }
+.breadcrumbs__item {
+display: inline-block; }
+.breadcrumbs__item:not(:last-of-type) ::after {
+content: '\203a';
+margin: o 5px;
+color: #8267BE;
+}
+.breadcrumbs__link{
+tect-decoration: none; 
+color: #8267BE;
+}
+.breadcrumbs__link:hover{
+tex-decoration: underline;
+}
+.breadcrumbs__link--active{
+color: #8267BE;
+font-weigth: 500;
+}
