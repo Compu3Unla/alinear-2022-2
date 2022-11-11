@@ -404,6 +404,7 @@ span {
 
 .container-card {
 	position: relative;
+	overflow: hidden;
 }
 
 .swiper-button-next,.swiper-button-prev {
@@ -465,7 +466,6 @@ span {
 	display: flex;
 	align-items: center;
 	width: 513px;
-	padding-left: 32px;
 	height: 30px;
 }
 
@@ -580,7 +580,10 @@ input, textarea, select, button {
 
 /* concienticemos */
 #concienticemos {
-	height: 958px;
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 	
 .concienticemos-contenido {
@@ -594,9 +597,7 @@ input, textarea, select, button {
 }
 
 .card {
-	width: 681px;
-	height: 210px;
-	margin: 0px 0px 31px 32px;
+	margin: 0px 0px 30px 0px;
 	border-radius: 30px ;
 	overflow: hidden;
 	background: #8267BE;
@@ -605,12 +606,15 @@ input, textarea, select, button {
 	transition: all 400ms ease;
 	display: flex;
 	flex-direction: row;
-	position: relative;
+	padding: 0px 20px 0px 0px;
+	height: 210px;
 }
 
 .iconos {
-	position: absolute;
-	padding: 24px 0px 0px 590px;
+	display: flex;
+	padding: 25px 0px 0px 25px;
+	justify-content: flex-end;
+	width: 100%
 }
 
 .iconos img {
@@ -625,18 +629,21 @@ input, textarea, select, button {
 .card h4 {
 	font-weight: 700;
 	font-size: 20px;
-	padding: 74px 0px 36px 50px;
+	padding: 24px 0px 36px 50px;
 	max-width: 380px;
 }
 
+.contenido {
+	display: flex;
+	flex-direction: column;
+}
 .card .contenido a {
 	padding: 8px 12px;
-	display: inline-block;
 	color: #F8F8F8;
 	border: 2px solid #F8F8F8;
 	border-radius: 8px;
 	transition: all 400ms ease;
-	margin-left: 330px;
+	align-self: end;
 }
 .card .contenido a:hover{
 	background: #F8F8F8;
@@ -733,8 +740,6 @@ input, textarea, select, button {
 /* colabora con la fundacion */
 #fundacion {
 	background-color: #3FA796;
-	width: 1440px;
-	height: 666px;
 }
 
 .contenido-fundacion h2 {
@@ -787,6 +792,7 @@ input, textarea, select, button {
 
 .botonera-fund {
 	display: flex;
+	justify-content: center;
 }
 
 .botonera-fund a {
@@ -1218,8 +1224,7 @@ font-weigth: 500;
 	.home {
 		display: flex;
 		flex-direction: column;
-		margin: 0px;
-		height: 900px;
+		background-color: black;
 	}
 	
 	.header {
@@ -1270,22 +1275,30 @@ font-weigth: 500;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		margin: auto;
-		height: 600px;
+		margin: 0px 0px 50px 55px;
+		height: 0px;
+		padding: 290px 0px;
 	}
 	
 	.formulario-registro #usuario, #contrasena {
 		width: 390px;
 		height: 48px;
 	}
+		
+	.formulario-registro a {
+		margin: 25px 50px;
+	}
 	
 	.titulo-formulario {
-		padding-top: 46px;
+		padding: 40px 50px ;
 	}
 		
 	.texto-portada {
-	max-width: none;
-	margin: 42px 76px 0px;
+		margin: 42px 56px 40px;
+	}
+
+	.google .facebook {
+		margin: 10px;
 	}
 	
 	.texto-portada h1 {
@@ -1351,16 +1364,32 @@ font-weigth: 500;
 	
 	.icono-buscador {
 		padding-left: 0px;
+		width: 95%;
 	}
+		
 	.container-mapa {
 		margin-left: 40px;
+		margin-right: 40px;
 		height: auto;
 	}
 	
 	.container-form {
 		margin: auto;
-    	width: 570px;
+		width: 100%;
     	padding-top: 30px;
+	}
+	
+	.container-form h4 {
+		padding:  0px 0px 24px 28px;
+	}
+		
+	.formulario-org {
+		align-items: center;
+	}
+		
+	form {
+		margin: 0px;
+		width: 540px;
 	}
 	
 	input {
@@ -1368,21 +1397,27 @@ font-weigth: 500;
 	}
 		
 	input, textarea, select, button {
-		width: 535px;
+		width: 100%;
 	}
 	
 	#sobre-nosotros {
-	height: auto;
-		
+		height: auto;
+	
 	}
 	.objetivo video {
 		width: 500px;
 		margin-bottom: 30px;
 	}
 		
+	#nuestro-barrio {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+		
 	#concienticemos {
-		height: auto;
-		margin-bottom: 20px;
+		padding: 0px;
+
 	}
 	
 	.subtitulo h2 {
@@ -1446,11 +1481,14 @@ font-weigth: 500;
 		font-size: 16px;
 		text-align: center;
 		max-width: 300px;
-		padding: 64px 0px 12px 20px;
+		padding: 0px 0px 12px 20px;
 	}
 		
 	.iconos {
-		padding: 16px 0px 0px 470px;
+		max-width: 44%;
+    	height: 40%;
+    	padding: 10px 0px 0px 80px;
+    	align-self: flex-end;
 	}
 	
 	.iconos img {
@@ -1469,6 +1507,10 @@ font-weigth: 500;
 		height: 576px;
 		margin: 0px 0px 20px 12px;
 	}
+		
+	.container-card {
+		overflow: hidden;
+	}
 	
 	#fundacion {
 		width: auto;
@@ -1478,7 +1520,7 @@ font-weigth: 500;
 	}
 	
 	.contenido-fundacion {
-		height: 900px;
+		/*height: 900px;*/
 	}
 		
 	.contenido-fundacion h2 {
