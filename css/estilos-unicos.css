@@ -915,14 +915,24 @@ footer {
 }
 
 /* registrate */
+ .form-group input {
+	height: 48px;
+	margin-top: 3px;
+}
+
 .Registrarte{
 	display: flex;
 	flex-direction: row;
 }
+.datosP input{
+	height: 48px;
+	margin-left: 22px;
+	margin-right: -14px;
+}
 .formu-novedades{
 	background: #3FA796;
 	margin-bottom: 45px;
-	padding-top: 32px;
+	padding-top: 31px;
 	padding-bottom: 37px;
 	padding-left: 3px;
 	margin-left: 45px;
@@ -935,8 +945,8 @@ footer {
 .datosP{
 	display: flex;
 	flex-direction: row;
-	padding-left: 0px;
-	padding-right: 0px;
+	margin-right: 2px;
+	margin-left: -12px;
 }
 .Nacimiento{
 	display: flex;
@@ -947,15 +957,25 @@ footer {
 	flex-direction: row;
 }
 .form-control{
-	margin-left: 16px;
+	margin-left: 12px;
 	margin-bottom: 19px;
 }
-.inicio-de-form h2, p{
+.inicio-de-form h2 {
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-	line-height: 1px;
-
+	width: 0px;
+	margin-bottom: 0px;
+	padding-top: 3px;
+	padding-bottom: 0px;
+	margin-left: 11px;
+}
+.inicio-de-form  p{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	margin-bottom: 33px;
+	margin-left: 9px;
 }
 .click-registro{
 	margin-top: 15px;
@@ -972,28 +992,34 @@ footer {
 }
 .font-weight-bold{
 	color: #f8f8f8;
+	margin-left: 15px;
 }
 .radio{
-	color:#FFFFFF;
+	color: #FFFFFF;
+	margin-left: 17px;
+}
+#skin{
+	width: 24px;
+	margin-left: 31px;
+	margin-right: 26px;
 }
 /* ........... */
 
 /* tarjeta */
 .Formulario-tarjeta{
 	background: #3FA796;
-	margin-top: 30px;
 	padding-top: 59px;
-	margin-bottom: 43px;
+	margin-bottom: 57px;
 	padding-bottom: 46px;
 	margin-left: 150px;
 	margin-right: 150px;
 	border-radius: 31px;
 	width: 1140px;
-	height: 793px;
+	height: 840px;
 }
 .inicio-de-form p{
 	line-height: 139%;
-	padding-bottom: 32px;
+	padding-bottom: 0px;
 }
 .inicio-de-form img {
 	margin-bottom: 48px;
@@ -1002,14 +1028,14 @@ footer {
 .ingresar-registro{
 	color: #f8f8f8;
 	border: 2px solid #F8F8F8;
-	border-radius: 6px;
-	padding-right: 207px;
-	padding-left: 207px;
-	margin-left: 22px;
+	border-radius: 8px;
 	padding-top: 8px;
-	margin-bottom: 25px;
+	margin-bottom: 9px;
 	padding-bottom: 8px;
-	margin-top: 17px;
+	margin-top: 38px;
+	width: 609px;
+	padding-left: 227px;
+	margin-left: 15px;
 }
 .ingresar-registro:hover{
 	background: #ffffff;
@@ -1018,6 +1044,8 @@ footer {
 .cancelar-registro{
 	margin-top: 0px;
 	color: #f8f8f8;
+	padding-right: 0px;
+	padding-left: 42px;
 }
 
 .Registrar-tarjeta h2{
@@ -1036,23 +1064,36 @@ footer {
 
 /* confirmaridentidad */
 .Formulario-identidad{
+	display: flex;
+	align-content: center;
 	background: #3fa796;
 	width: 1144px;
 	height: 438px;
 	margin-bottom: 51px;
-	padding-top: 27px;
-	margin-left: 57px;
+	padding-top: 39px;
+	margin-left: 90px;
 	margin-right: 57px;
 	border-radius: 33px;
+	margin-top: 6px;
 }
-.Registrar-tarjeta h2{
-	margin-top: 37px;
+.Registrar-correo h2{
+	text-align: center;
+	font-family: ubuntu;
+	padding-right: 147px;
+}
+.digitos{
+	padding-left: 30px
+}
+.Formulario-identidad input{
+	width: 210px;
 }
 /* ........ */
 
 /* migasdepan */
 .breadcrumbs {
-padding: 10px; }
+	padding: 10px;
+	margin-left: 36px;
+}
 .breadcrumbs__item {
 display: inline-block; }
 .breadcrumbs__item:not(:last-of-type) ::after {
@@ -1070,4 +1111,94 @@ tex-decoration: underline;
 .breadcrumbs__link--active{
 color: #8267BE;
 font-weigth: 500;
+}
+/*--------formulariocodigo--------*/
+.Formulario-codigo{
+	background: #3FA796;
+	width: 1183px;
+	height: 481px;
+	margin-bottom: 98px;
+	margin-left: 60px;
+	margin-right: 60px;
+	border-radius: 31px;
+	padding-top: 19px;
+}
+.Formulario-codigo h2{
+	width: 100%;
+	margin-top: 0px;
+	padding-top: 22px;
+	padding-bottom: 12px;
+}
+.Formulario-codigo input{
+	width: 37%;
+}
+.Formulario-codigo a{
+	padding-top: 9px;
+	margin-top: 17px;
+}
+/*---------------adaptacion600px--------------*/
+/*--------Registro--------*/
+@media screen and (max-width: 600px) {
+		.list{
+		display: none;
+	}
+.inicio-de-form h2 {
+	font-size: 28px;
+	margin-left: 34px;
+	padding-bottom: 11px;
+}
+.inicio-de-form p {
+	font-size: 15px;
+	margin-left: 37px;
+	padding-bottom: 2px;
+}
+	
+	.formu-novedades{
+	width: 570px;
+	height: 672px;
+	margin-left: 18px;
+	padding-top: 59px;
+	padding-left: 22px;
+	}
+	
+	.datosP, .radio{
+	width: 78%;
+	margin-left: 20px ;
+	}
+	.font-weight-bold{
+	margin-left: 38px;		
+	}
+	.radio{
+	margin-left: 40px;
+	width: auto;
+	}
+	.ingresar-registro{
+	width: 75%;
+	margin-right: 87px;
+	padding-left: 165px;
+	}
+	.cancelar-registro{
+	padding-left: 0px 131px 0px 0px;
+	margin-right: 102px;
+	}
+	#skin{
+	width: 20px;
+	margin-right: 66px;
+	margin-left: 15px;
+	}
+	.form-group{
+	width: 78%;
+	margin-left: 20px;
+	}
+	.boton-header{
+	width: 39%;
+	}
+	.imagenes-header{
+	width: 30%;
+	margin-right: 71px;
+	padding-bottom: 0px;
+	}
+	.iconoperfil{
+		display:none;
+	}
 }
