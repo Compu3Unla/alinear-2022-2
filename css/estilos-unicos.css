@@ -134,7 +134,7 @@ main {
 }
 
 /* Home */
-.home {
+#home {
 	display: flex;
 	justify-content: center;	
 	background-image: url(/img/portada.png);
@@ -204,7 +204,8 @@ p {
 
 .texto-portada p {
 	font-size: 27px;
-	font-family: roboto, 'sans serif';	
+	font-family: roboto, 'sans serif';
+	text-align: start;	
 }
 
 .registro {
@@ -247,7 +248,7 @@ p {
 
 .formulario-registro input {
 	width: 361px;
-	height: 40px;
+	height: 48px;
 }
 
 .formulario-registro a {
@@ -459,7 +460,7 @@ span {
 }
 
 .icono-buscador {
-	background-image: url(/alinear-2022-2-Rocio-registrame/img/icono-buscar.png);
+	background-image: url(/img/buscar.png);
 	background-repeat: no-repeat;
 	background-position: 4px center;
 	background-size: 24px;
@@ -542,6 +543,7 @@ input,textarea {
 
 input, textarea, select, button {
   width : 600px;
+  height: 48px;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -749,7 +751,7 @@ input, textarea, select, button {
 }
 
 .contenido-fundacion p {
-	padding-top: 24px;
+	padding: 0px 0px 32px 0px;
 	max-width: 1000px;
 	text-align: center;
 }
@@ -786,8 +788,8 @@ input, textarea, select, button {
 }
 
 .boton-fundacion {
-	width: 300px;
-	height: 48px;
+	max-width: 31px;
+	margin: auto;
 }
 
 .botonera-fund {
@@ -795,23 +797,20 @@ input, textarea, select, button {
 	justify-content: center;
 }
 
-.botonera-fund a {
+.estructura-botones-fundacion a {
+	color: #F8F8F8;
+	padding: 14px 103px;
+	
 	font-size: 16px;
 	font-weight: 500;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
 	border: solid 2px #F8F8F8;
-	color: #F8F8F8;
-	border-radius: 8px;
-	padding: 13px 20px;
-	box-sizing: border-box;
-	margin: 24px 20px;
+	border-radius: 6px;
 }
 
-.botonera-fund a:hover {
+.estructura-botones-fundacion a:hover {
 	background-color: #F8F8F8;
 	color: #3FA796;
+	border-radius: 6px;
 }
 
 /* contribuir */
@@ -884,6 +883,7 @@ input, textarea, select, button {
 	font-size: 48px;
 	text-align: center;
 	padding: 10px;
+	margin: 48px;
 }
 
 .botonera ul {
@@ -913,10 +913,8 @@ input, textarea, select, button {
 
 .parrafo {
 	display: flex;
-	float: left;
-	margin-left: 30px;
-	margin-top: 50px;
-	max-height: 400px;
+	margin: 50px 30px 20px 0px;
+    max-height: 400px;
 }
 
 .contribuir p {
@@ -1021,7 +1019,8 @@ input, textarea, select, button {
 	font-size: 20px;
 	font-weight: 300;
 	list-style: none;
-	color: #F8F8F8;	
+	color: #F8F8F8;
+	margin: 0px 380px;
 }
 
 .texto-check li {
@@ -1064,6 +1063,7 @@ footer {
 	display: flex;
 	flex-direction: row;
 }
+
 .formu-novedades{
 	background: #3FA796;
 	margin-bottom: 45px;
@@ -1074,15 +1074,19 @@ footer {
 	margin-right: 47px;
 	border-radius: 31px;
 }
+
 .inicio-de-form{
 	color: #f8f8f8;
+	max-height: 200px;
 }
+
 .datosP{
 	display: flex;
 	flex-direction: row;
 	padding-left: 0px;
 	padding-right: 0px;
 }
+
 .Nacimiento{
 	display: flex;
 	flex-direction: row;
@@ -1091,10 +1095,16 @@ footer {
 	display: flex;
 	flex-direction: row;
 }
+
+.radio input {
+height: 24px;
+}
+
 .form-control{
 	margin-left: 16px;
 	margin-bottom: 19px;
 }
+
 .inicio-de-form h2, p{
 	display: flex;
 	flex-direction: column;
@@ -1174,7 +1184,6 @@ footer {
 	display:flex;
 	flex-direction: column;
 }
-/* ........ */
 
 /* confirmaridentidad */
 .Formulario-identidad{
@@ -1190,7 +1199,6 @@ footer {
 .Registrar-tarjeta h2{
 	margin-top: 37px;
 }
-/* ........ */
 
 /* migasdepan */
 .breadcrumbs {
@@ -1202,16 +1210,152 @@ content: '\203a';
 margin: o 5px;
 color: #8267BE;
 }
+
 .breadcrumbs__link{
-tect-decoration: none; 
+text-decoration: none; 
 color: #8267BE;
 }
 .breadcrumbs__link:hover{
-tex-decoration: underline;
+text-decoration: underline;
 }
 .breadcrumbs__link--active{
 color: #8267BE;
-font-weigth: 500;
+font-weight: 500;
+}
+
+/* nuevo comedor comunitario */
+
+.titulo-comedor-2 {
+	display: flex;
+	margin-top: 64px;
+	justify-content: center;
+	color: #1E1E1E;
+	font-size: 48px;
+	font-weight: 700;
+	font-family: ubuntu;
+} 
+
+.comedor-infantil{
+	height: 218px;
+	width: 870px;
+	background-color: #3FA796;
+	display: flex;
+	margin: auto;
+	border-radius: 10px;		
+}
+
+.comedor-infantil p{
+
+	font-size: 15px;
+	font-weight: 300;
+	max-width: 500px;
+	margin: auto;
+	padding: 55px 32px ;
+	text-align: center;
+	border-radius: 10%;
+}
+
+ .titulos .titulo-comedor{		
+	font-size: 48px;
+	color: #1E1E1E
+}
+
+.titulos .construimos{
+	font-size: 15px;
+	color: #1E1E1E;
+}
+
+.cuadrado-izq{
+	background-color: #FFBD35;
+	max-width: 867px;
+	justify-content: center;			
+	border-radius: 14px;
+	margin: 40px 0px 0px 280px;	
+}
+
+.cuadrado-izq p{
+	font-size: 15px;
+	margin: auto;
+	color: #1E1E1E;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.cuadrado-izq .titulo {
+	font-size: 20px;
+	color: #000000;
+	padding: 20px;
+	font-weight: 400;
+	text-align: center;
+}
+
+.comedor-infantil .imagen-nuevo-comedor img {
+	border-radius: 12px;
+}
+
+.titulos .construimos{
+	padding: 50px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.titulos .titulo-comedor-2{
+	padding-bottom: 0px;
+}
+
+.cuadrado-izq .contenido-izq{
+	padding-bottom: 70px;
+}
+
+.ultimo-texto{
+	text-align: center;
+	color: #1E1E1E;
+	padding: 64px 0px;
+}
+
+.ultimo-texto p{
+	color: #1E1E1E;
+	font-family: ubuntu;
+	font-weight: 200;
+}
+
+.ultimo-texto .que-hicimos{
+	padding-top: 20px;
+	font-size: 25px;
+	font-family: ubuntu;
+	font-weight: 300;
+}
+
+.ultimo-texto .salon{
+	font-weight: 300;
+	font-family: roboto;
+
+}
+
+.ultimo-texto .lista-de-acciones li{
+	font-size: 20px;
+	font-family: roboto;
+	font-weight: 300;
+	padding: 15px;
+}
+
+.ultimo-texto .ejecucion{
+	font-size: 25px;
+}
+
+.ejecucion{
+	padding-bottom: 10px;
+}
+
+.que-hicimos{
+	padding-bottom: 15px;
+}
+
+.salon {
+	padding-bottom: 40px;
 }
 	
 	@media screen and (max-width: 600px) {
