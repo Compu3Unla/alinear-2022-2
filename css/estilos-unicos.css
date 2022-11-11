@@ -188,7 +188,7 @@ p {
 
 .texto-portada {
 	max-width: 476px;
-	margin: 461px 0px 0px 148px;
+
 }
 
 .texto-portada h2 p {
@@ -1220,7 +1220,6 @@ font-weigth: 500;
 		margin: 0px;
 		padding: 0px		
 	}
-	
 	.home {
 		display: flex;
 		flex-direction: column;
