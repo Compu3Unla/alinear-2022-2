@@ -326,8 +326,15 @@ span {
 	margin-bottom: 48px;
 }
 
-.novedades {
-	color: #000000;
+.novedades-2 h2 {
+	color: #1E1E1E;
+	padding-bottom: 40px;
+}
+
+.novedades-2 p {
+	max-width: 552px;
+	margin: auto;
+	color: #1E1E1E;
 }
 
 .container-card {
@@ -340,7 +347,6 @@ span {
 	margin: 24px;
 	border-radius: 30px;
 	background-color: #3FA796;
-	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
 	transition: all 400ms ease-out;
 	cursor: default;
 	width: 332px;
@@ -348,21 +354,22 @@ span {
 }
 
 .Ncard:hover {
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
 	transform: translateY(-5%);
 }
 
-.Ncard img {
+.img-novedades {
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
+	width: 100%;
 }
 
 .Ncard .contenido-card h5 {
-	padding: 16px 0px;
 	font-family: roboto;
 	font-weight: 700;
 	color: #FFFFFF;
 	font-size: 24px;
+	text-align: center;
+	padding: 8px 0px;
 }
 
 .P-italic {
@@ -371,27 +378,23 @@ span {
 	font-style: italic;
 }
 
-/* .Ncard .contenido-card p{
-	margin-left: 11px;
-	margin-right: 11px;
-	padding-bottom: 0px;
+.Ncard .contenido-card p{
+	font-size: 16px;
+	max-width: 289px;
+	margin: auto;
+	padding-bottom: 40px;
 }
- */
+
 .vermasnovedades {
-	display: flex;
-	align-content: flex-end;
+	margin-left: 200px;
 }
 
 .vermasnovedades a {
 	color: #f8f8f8;
 	border: 2px solid #F8F8F8;
 	border-radius: 6px;
-	padding-right: 12px;
-	padding-left: 12px;
+	padding: 8px 12px;
 	margin-left: 22px;
-	padding-top: 8px;
-	margin-bottom: 25px;
-	padding-bottom: 8px;
 }
 
 .vermasnovedades a:hover {
@@ -404,15 +407,7 @@ span {
 }
 
 .swiper-button-next,.swiper-button-prev {
-	background-color: #f8f8f8;
 	position: absolute;
-	left: 268px;
-	top: 235px;
-	border-radius: 30px;
-	padding-left: 24px;
-	padding-right: 32px;
-	padding-top: 37px;
-	padding-bottom: 35px;
 }
 
 /* nuestro barrio */
@@ -745,7 +740,7 @@ input, textarea, select, button {
 .contenido-fundacion h2 {
 	font-family: ubuntu;
 	font-size: 48px;
-	padding: 64x 0px;
+	padding: 64px 0px;
 }
 
 .contenido-fundacion p {
@@ -760,6 +755,18 @@ input, textarea, select, button {
 	flex-direction: row;
 	list-style: none;
 	margin: 0px 0px 0px 0px;
+}
+
+.cards-gral {
+	display: flex;
+	flex-direction: row;
+	margin-left: 39px;
+}
+
+.botones-gral {
+	display: flex;
+	flex-direction: row;
+	margin-left: 38px;
 }
 
 .cards-fundacion {
@@ -780,8 +787,6 @@ input, textarea, select, button {
 
 .botonera-fund {
 	display: flex;
-	width: 1440px;
-	margin-left: 39px;
 }
 
 .botonera-fund a {
@@ -1211,20 +1216,54 @@ font-weigth: 500;
 	}
 	
 	.home {
-		background-color: black;
 		display: flex;
 		flex-direction: column;
 		margin: 0px;
-		height: 730px;
+		height: 900px;
+	}
+	
+	.header {
+		height: 340px;
+		position: inherit;
+		display: flex;
+		flex-direction: column;
+	}
+	
+	.header nav .list {
+		display: flex;
+		padding: 10px;
+    	flex-direction: column;
+   		text-align: center;
+    	flex-wrap: nowrap;
 	}
 		
 	.header .boton-header {
 		visibility: hidden;
 		margin: 0px;
+		width: 0px;
+    	height: 0px;
 	}
 		
 	.icono-perfil {
 		margin-left: 0px;
+		visibility: hidden;
+		width: 0px;
+    	height: 0px;
+	}
+		
+	.dropdown {
+		visibility: hidden;
+		width: 0px;
+		height: 0px;
+	}
+		
+	.logo img {
+		margin: 20px 463px 15px 24px;
+		width: 12%;
+	}
+		
+	main {
+		padding: 0px;
 	}
 	
 	.registro {
@@ -1232,11 +1271,12 @@ font-weigth: 500;
 		flex-direction: column;
 		justify-content: center;
 		margin: auto;
+		height: 600px;
 	}
 	
 	.formulario-registro #usuario, #contrasena {
 		width: 390px;
-		height: 41px;
+		height: 48px;
 	}
 	
 	.titulo-formulario {
@@ -1245,13 +1285,13 @@ font-weigth: 500;
 		
 	.texto-portada {
 	max-width: none;
-	margin: 0px 40px;
+	margin: 42px 76px 0px;
 	}
 	
 	.texto-portada h1 {
 		font-size: 40px;
 		text-align: left;
-		margin: 40px 0px 0px 20px;
+		margin: 0px 40px;
 	}
 		
 	.texto-portada p {
@@ -1259,7 +1299,8 @@ font-weigth: 500;
 		text-align: left;
 		font-weight: 500;
 		max-width: 299px;
-		margin: 5px 0px 0px 25px;
+		margin: 5px 0px 0px 40px;
+		padding: 0px;
 		}
 	
 	h2 {
@@ -1317,9 +1358,15 @@ font-weigth: 500;
 	}
 	
 	.container-form {
-      	margin: 0px;
+		margin: auto;
+    	width: 570px;
+    	padding-top: 30px;
 	}
 	
+	input {
+		height: 48px;
+	}
+		
 	input, textarea, select, button {
 		width: 535px;
 	}
@@ -1337,7 +1384,11 @@ font-weigth: 500;
 		height: auto;
 		margin-bottom: 20px;
 	}
-
+	
+	.subtitulo h2 {
+		padding-top: 50px;
+	}
+		
 	.concienticemos {
 		display: flex;
 		flex-direction: column;
@@ -1358,9 +1409,27 @@ font-weigth: 500;
 		height: 576px;
 	}
 	
-	.contenido_back {
-		padding-top: 100px;
+	.card_back {
 		transform: none;
+	}
+	
+	.card_father:hover .card_great {
+		transform: none;
+	}
+	
+	.contenido_front h3 {
+		visibility: hidden;
+	}
+		
+	.contenido_back {
+		padding-top: 120px;
+	}
+		
+	.contenido_back p {
+		font-size: 17px;
+		max-width: 450px;
+    	margin: auto;
+		padding: 50px 0px 120px 0px;
 	}
 		
 	.card_great {
@@ -1374,24 +1443,31 @@ font-weigth: 500;
 	}
 	
 	.card h4 {
-		font-size: 1em;
+		font-size: 16px;
 		text-align: center;
 		max-width: 300px;
-		padding: 68px 0px 12px 20px;
+		padding: 64px 0px 12px 20px;
 	}
 		
 	.iconos {
-		padding: 24px 0px 0px 470px;
+		padding: 16px 0px 0px 470px;
+	}
+	
+	.iconos img {
+		width: 40%;
+		height: 40%;
 	}
 		
 	.card .contenido a {
-		margin-left: 190px;
+    	font-size: 14px;
+    	padding: 7px 14px;
+		margin: 5px 0px 0px 240px;
 	}
 		
 	.card_father, .container_flip {
 		width: 552px;
 		height: 576px;
-		margin-left: 12px;
+		margin: 0px 0px 20px 12px;
 	}
 	
 	#fundacion {
@@ -1401,6 +1477,10 @@ font-weigth: 500;
 		flex-direction: column;
 	}
 	
+	.contenido-fundacion {
+		height: 900px;
+	}
+		
 	.contenido-fundacion h2 {
 		font-size: 40px;
 		padding: 50px 0px 20px 0px;
@@ -1413,8 +1493,7 @@ font-weigth: 500;
 		}
 	
 	.container-fundacion {
-    	flex-wrap: wrap;
-    	position: absolute;
+    	margin-top: 40px;
 	}
 	
 	.cards-fundacion {
@@ -1426,10 +1505,18 @@ font-weigth: 500;
 		height: 92%;
 	}
 	
-	.botonera-fund {
- 		flex-wrap: wrap;
-		width: auto;
+	.cards-gral {
+    	flex-direction: column;
+		margin: auto;
 		position: relative;
+	}
+		
+	.botones-gral {
+		flex-direction: column;
+		position: absolute;
+	}
+		
+	.botonera-fund {
 	}
 		
 	.botonera-fund a {
