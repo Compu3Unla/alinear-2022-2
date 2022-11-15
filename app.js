@@ -42,3 +42,4 @@ var swiper = new Swiper('.swiper-container', {
 		  map: map
 		});
 	}
+	
