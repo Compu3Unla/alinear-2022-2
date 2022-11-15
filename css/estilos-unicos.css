@@ -134,7 +134,7 @@ main {
 }
 
 /* Home */
-#home {
+.home {
 	display: flex;
     justify-content: center;
     background-image: url(../img/home-portada.png);
@@ -791,6 +791,18 @@ input, textarea, select, button {
 	margin-left: 38px;
 }
 
+.cards-gral {
+	display: flex;
+	flex-direction: row;
+	margin-left: 39px;
+}
+
+.botones-gral {
+	display: flex;
+	flex-direction: row;
+	margin-left: 38px;
+}
+
 .cards-fundacion {
 	background-color: #FFBD35;
 	width: 300px;
@@ -805,6 +817,11 @@ input, textarea, select, button {
 .boton-fundacion {
 	margin-bottom: 50px;	
 } 
+
+.botonera-fund {
+	display: flex;
+	justify-content: center;
+}
 
 .estructura-botones-fundacion a {
 	color: #F8F8F8;
@@ -1102,48 +1119,25 @@ footer {
 }
 
 /* registrate */
-.ingresar-registrarte {
-	color: #f8f8f8;
-	border-width: 3px;
-	border-style: solid;
-	padding-top: 8px;
-	padding-right: 251px;
-	padding-bottom: 8px;
-	padding-left: 251px;
-	border-radius: 8px;
-	margin-bottom: 9px;
-	margin-top: 9px;
-}
-
-.ingresar-registrarte:hover {
-	background: #ffffff;
-	color: #3FA796;
-}
-
-.cancelarr-registro {
-	color: #f8f8f8;
-	margin-right: -3px;
-}
-
  .form-group input {
 	height: 48px;
 	margin-top: 3px;
 }
 
-.Registrarte {
+.Registrarte{
 	display: flex;
 	flex-direction: row;
 }
 
-.datosP input {
+.datosP input{
 	height: 48px;
 	margin-left: 22px;
 	margin-right: -14px;
 }
 
-.formu-novedades {
+.formu-novedades{
 	background: #3FA796;
-	margin: 50px 47px 45px 45px;
+	margin: 0px 47px 45px 45px;
 	padding: 31px 0px 37px 3px;
 	border-radius: 31px;
 }
@@ -1173,7 +1167,7 @@ footer {
 height: 24px;
 }
 
-.form-control {
+.form-control{
 	margin: 0px 0px 19px 12px;
 }
 
@@ -1193,13 +1187,12 @@ height: 24px;
 	margin: 0px 0px 33px 9px;
 }
 
-.inicio-de-form h2, p {
+.inicio-de-form h2, p{
 	display: flex;
 	flex-direction: column;
-
 }
 
-.click-registro {
+.click-registro{
 	margin: 15px 0px 11px 0px;
 	padding: 0px 0px 4px 0px;
 }
@@ -1219,12 +1212,11 @@ height: 24px;
 	margin-left: 15px;
 }
 
-.radio {
+.radio{
 	color: #FFFFFF;
 	margin-left: 17px;
 }
-
-#skin {
+#skin{
 	width: 24px;
 	margin: 0px 26px 0px 31px;
 }
@@ -1285,7 +1277,7 @@ height: 24px;
 }
 
 /* confirmaridentidad */
-.Formulario-identidad {
+.Formulario-identidad{
 	display: flex;
 	align-content: center;
 	background: #3fa796;
@@ -1296,17 +1288,16 @@ height: 24px;
 	border-radius: 33px;
 }
 
-.Registrar-correo h2 {
+.Registrar-correo h2{
 	text-align: center;
 	font-family: ubuntu;
 	padding-right: 147px;
 }
 
-.digitos {
+.digitos{
 	padding-left: 30px
 }
-
-.Formulario-identidad input {
+.Formulario-identidad input{
 	width: 210px;
 }
 
@@ -1325,7 +1316,8 @@ margin: o 5px;
 color: #8267BE;
 }
 
-.breadcrumbs__link {
+.breadcrumbs__link{
+text-decoration: none; 
 color: #8267BE;
 }
 
@@ -1335,6 +1327,97 @@ text-decoration: underline;
 
 .breadcrumbs__link--active {
 color: #8267BE;
+
+font-weigth: 500;
+}
+
+/*--------formulariocodigo--------*/
+.Formulario-codigo{
+	background: #3FA796;
+	width: 1183px;
+	height: 481px;
+	margin: 0px 60px 98px 60px;
+	border-radius: 31px;
+	padding: 19px 0px;
+}
+.Formulario-codigo h2{
+	width: 100%;
+	margin-top: 0px;
+	padding: 22px 0px 12px 0px;
+}
+.Formulario-codigo input{
+	width: 37%;
+}
+.Formulario-codigo a{
+	padding-top: 9px;
+	margin-top: 17px;
+}
+/*---------------adaptacion600px--------------*/
+/*--------Registro--------*/
+@media screen and (max-width: 600px) {
+		.list{
+		display: none;
+	}
+.inicio-de-form h2 {
+	font-size: 28px;
+	margin-left: 34px;
+	padding-bottom: 11px;
+}
+.inicio-de-form p {
+	font-size: 15px;
+	margin-left: 37px;
+	padding-bottom: 2px;
+}
+	
+	.formu-novedades{
+	width: 570px;
+	height: 672px;
+	margin: 0px 0px 0px 18px;
+	padding: 59px 0px 0px 22px;
+	}
+	
+	.datosP, .radio{
+	width: 78%;
+	margin-left: 20px ;
+	}
+	.font-weight-bold{
+	margin-left: 38px;		
+	}
+	.radio{
+	margin-left: 40px;
+	width: auto;
+	}
+	.ingresar-registro{
+	width: 75%;
+	margin-right: 87px;
+	padding-left: 165px;
+	}
+	.cancelar-registro{
+	padding-left: 0px 131px 0px 0px;
+	margin-right: 102px;
+	}
+	#skin{
+	width: 20px;
+	margin-right: 66px;
+	margin-left: 15px;
+	}
+	.form-group{
+	width: 78%;
+	margin-left: 20px;
+	}
+	.boton-header{
+	width: 39%;
+	}
+	.imagenes-header{
+	width: 30%;
+	margin-right: 71px;
+	padding-bottom: 0px;
+	}
+	.iconoperfil{
+		display:none;
+	}
+}
+
 font-weight: 500;
 }
 
@@ -1594,7 +1677,7 @@ font-weight: 500;
 		max-width: 299px;
 		margin: 5px 0px 0px 40px;
 		padding: 0px;
-	}
+		}
 	
 	h2 {
 		font-size: 40px;
@@ -1620,11 +1703,6 @@ font-weight: 500;
 	}
 	
 	#novedades {
-		margin-bottom: 0px;
-	}
-		
-	.novedades {
-		margin: auto;
 	}
 	
 	.nuestro-barrio {
@@ -1670,7 +1748,7 @@ font-weight: 500;
 		margin: 0px;
 		width: 540px;
 	}
-	
+
 	input {
 		height: 48px;
 	}
@@ -1682,7 +1760,7 @@ font-weight: 500;
 	#sobre-nosotros {
 		height: auto;
 	}
-
+  
 	.objetivo video {
 		width: 500px;
 		margin-bottom: 30px;
@@ -1748,8 +1826,8 @@ font-weight: 500;
 	.card_great {
 		width: auto;
 		height: auto;
-	}
-
+  }
+    
 	.card img {
 		width: 197px;
 		height: 170px;
@@ -1789,17 +1867,13 @@ font-weight: 500;
 	.container-card {
 		overflow: hidden;
 	}
-	
+
 	#fundacion {
 		width: auto;
 		height: auto;
 		display: flex;
 		flex-direction: column;
 	}
-	
-	/* .contenido-fundacion {
-		height: 900px;
-	} */
 		
 	.contenido-fundacion h2 {
 		font-size: 40px;
@@ -1835,9 +1909,6 @@ font-weight: 500;
 		flex-direction: column;
 		position: absolute;
 	}
-		
-	/* .botonera-fund {
-	} */
 		
 	.botonera-fund a {
 		width: 224px;
