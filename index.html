@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos-unicos.css">
+    <link rel="icon" href="img/alinear-logo.ico">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <title>Alinear</title>
+</head>
+<body>
+    <header class="header">
+        <a href="#home">
+            <img src="img/alinear-logo-color.svg" width="99px" height="53px" alt="logo-alinear">
+        </a>
+        <nav>
+            <ul class="list">                
+                <a href="#sobre-nosotros"><li>SOBRE NOSOTROS</li></a>
+                <a href="#novedades"><li>NOVEDADES</li></a>
+                <a href="#nuestro-barrio"><li>NUESTRO BARRIO</li></a>
+                <a href="#concienticemos"><li>CONCIENTICEMOS</li></a>
+                <a href="#fundacion"><li>COLABORAR</li></a>
+            </ul>
+        </nav> 
+        <a href="#fundacion" class="boton-header">DONÁ ACÁ</a>
+		<div class="dropdown">
+            <button class="icono-perfil"><img src="img/icono-perfil.svg" alt="icono-perfil"></button>
+            <div class="dropdown-content">
+                <a href="#">PREGUNTAS FRECUENTES</a>
+                <a href="#">COMUNIDAD</a>
+                <a href="#">NOTIFICACIONES</a>
+                <a href="#">AYUDA</a>
+                <a href="#">AJUSTES</a>
+                <a href="#">CERRAR SESIÓN</a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div class="texto-portada">
+                <h1>Tu ayuda es transformación</h1>
+                <p>Trabajemos entre todos para reducir el hambre, mejorar la nutrición y evitar el desperdicio de alimentos.</p>
+            </div>
+            <form class="registro">
+                <div class="formulario-registro">
+					<h3 class="titulo-formulario"> Iniciar sesión</h3>
+                    <input type="text" name="usuario" id="usuario" placeholder="Usuario">
+                    <input type="text" name="contrasena" id="contrasena" placeholder="Contraseña">
+					<a class="inicia-sesion" href="#">INICIA SESIÓN</a>
+					<a class="inicia-sesion" href="registrate.html">REGISTRATE</a>
+                  <p>O iniciá sesión con</p>
+				<img class="google" src="img/icono-google.svg" alt="icono-google">  
+                <img class="facebook" src="img/icono-facebook.svg" alt="icono-facebook">
+                </div>
+            </form>
+        </section>
+        <section id="sobre-nosotros">
+            <div>
+                <h2>Sobre nosotros</h2>
+                <p>Trabajamos para reducir el desperdicio de alimentos, concientizando a las personas
+                sobre dicha problem&aacute;tica. Al mismo tiempo, aportamos nuestro granito de arena,
+                mediante la colaboraci&oacute;n de todos para mejorar la calidad alimentaria de
+                miles de personas del AMBA.</p>
+            </div>
+            <div class="containers">
+                <div class="corazones"><img src="img/img-corazonesamarillos.svg" width="478px" height="65px" alt="img-corazonesamarillos"></div>
+                <div class="container_violeta">
+                    <h4 >Ayudar a quienes lo necesitan</h4>
+                </div>
+                <div class="container_violeta">
+                    <h4>No despercidiar alimentos</h4>
+                </div> 
+            </div>
+                <p class="texto_corto"><span>Nuestro objetivo es alinear,</span> manteniendo siempre una l&iacute;nea recta</p>
+            <div class="objetivo">
+                <h3>¿C&oacute;mo lograr este objetivo?</h3>
+                <p>La tarea que realizamos todos los d&iacute;as es posible gracias al compromiso de distintas personas.
+                Por eso decimos que somos una gran cadena solidaria en la que cada parte es fundamental para cumplir
+                con nuestra misi&oacute;n. Cumplimos ésta labor junto a Banco de Alimentos, UNICEF Argentina y diferentes ONGs
+                y comedores comunitarios de toda la provincia de Buenos Aires.</p>
+                <video class="video" controls autoplay muted>
+                    <source src="banco-alimentos.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+	   <!-- novedades -->
+       <section id="novedades">
+            <div class="presentacion-Novedades">
+                <h2 class="titulo-nov"> Novedades</h2>
+                <p class="subt-nov">Conocer lo que hacemos es una forma de ser parte. Enterate de nuestras últimas noticias, eventos y acciones</p>
+            </div>
+            <div class="novedades-galeria">
+                <div class="swiper-container-myswiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/01.png" alt="imagen-de-personas-que-pertenecen-a-este-lugar" width="338px" height="227px">
+                            <div class="card-description">
+                                <div class="card-title">
+                                    <h5>Récord de donaciones</h5>
+                                    <p>El merendero “Sembrando Esperanzas”, de la localidad de Glew recibió una donación de más de 200 alimentos no perecederos, lácteos y verduras..</p>
+                                </div>
+                                <div class="card-link">
+                                    <a href="#">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/02.png" alt="imagen-de-personas-que-pertenecen-a-este-lugar" width="338px" height="227px">
+                            <div class="card-description">
+                                <div class="card-title">
+                                    <h5>Quilmes nos necesita</h5>
+                                    <p>Varios merenderos de la zona de Quilmes Oeste requiere de atención inmediata. Muchos de los vecinos denuncian falta de ayuda del Estado.</p>
+                                </div>
+                                <div class="card-link">
+                                    <a href="#">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/03.png" alt="imagen-de-personas-que-pertenecen-a-este-lugar" width="338px" height="227px">
+                            <div class="card-description">
+                                <div class="card-title">
+                                    <h5>Nuevo comedor </h5>
+                                    <p>Logramos juntar casi 500 kilos de alimentos en la ultima colecta y nuestro objetivo es duplicar este numero para llegar a más comedores.</p>
+                                </div>
+                                <div class="card-link">
+                                    <a href="nuevo-comedor-comunitario.html">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/04.png" alt="imagen-de-personas-que-pertenecen-a-este-lugar" width="338px" height="227px">
+                            <div class="card-description">
+                                <div class="card-title">
+                                    <h5>No da tregua</h5>
+                                    <p>A más de un año de la pandemia ocasionada por el COVID 19, se duplicó la cantidad de personas atendidas por las organizaciones..</p>
+                                </div>
+                                <div class="card-link">
+                                    <a href="#">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/05.png" alt="imagen-de-personas-que-pertenecen-a-este-lugar" width="338px" height="227px">
+                            <div class="card-description">
+                                <div class="card-title">
+                                    <h5>Entregaron donaciones</h5>
+                                    <p>La Fundación Metas Compartidas encabezó una entrega de donaciones destinada a los niños que son pacientes del Hospital Dr. Ramón..</p>
+                                </div>
+                                <div class="card-link">
+                                    <a href="#">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/06.png" alt="imagen-de-personas-que-pertenecen-a-este-lugar" width="338px" height="227px">
+                            <div class="card-description">
+                                <div class="card-title">
+                                    <h5>Juntos somos mas</h5>
+                                    <p>Lograr una donación extraordinaria de alimentos y productos de primera necesidad, que llegue a las mesas de miles de hogares  en..</p>
+                                </div>
+                                <div class="card-link">
+                                    <a href="#">Ver más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- nuestro barrio -->
+        <section id="nuestro-barrio">
+            <div class="presentacion-nb">
+                <h2>Nuestro Barrio</h2>
+                <p>Te invitamos a inscribir tu organización a Alinear, de esta manera vamos a poder estar más cerca de quienes lo necesitan</p>
+            </div>
+			<div class="barrio-gral">
+				<div class="container-mapa">
+					<h4>Colocá tu provincia, localidad o ciudad..</h4>
+					<div class="buscador">
+						<div class="icono-buscador">
+							<input type="text" name="buscar" id="buscar" placeholder="Buscar mi barrio">
+						</div>
+						<div id="map"></div>
+					</div>
+				</div>
+				<div class="container-form">
+					<h4>Datos de tu organización</h4>
+					<div class="formulario-org">
+						<form action="/my-handling-form-page" method="post">
+							<ul class="form-pau">
+								<li>
+									<input type="text" name="Nombre" id="name" placeholder="Nombre de la organización">
+								</li>
+								<li>
+									<input type="text" name="cuit" id="CUIT" placeholder="CUIT">
+								</li>
+								<li>
+									<input type="text" name="lugar" id="lugar" placeholder="Dirección donde presta servicio">
+								</li>
+								<li>
+									<input type="text" name="calles" id="entrecalles" placeholder="Entrecalles">
+								</li>
+								<li>
+									<input type="text" name="barrio" id="barrio" placeholder="Barrio">
+								</li>
+								<li>
+									<input type="text" name="localidad" id="localidad" placeholder="Localidad">
+								</li>
+								<li>
+									<input type="text" name="partido" id="partido" placeholder="Partido">
+								</li>
+								<li>
+									<input type="text" name="pregunta" id="pregunta" placeholder="¿Cómo te enteraste de alinear?">
+								</li>
+								<li>
+									<input type="text" name="descrip" id="descrip" placeholder="Descripción del servicio principal">
+								</li>
+								<li>
+									<input type="checkbox" class="checkbox" value="first_checkbox"> Tengo el aval solicitado para mi organización
+								</li>
+								<li>
+									<input type="checkbox" class="checkbox" value="second_checkbox"> Acepto los términos y condiciones
+								</li>
+								<a class="continuar" href="#"><li>CONTINUAR</li></a>
+							</ul>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+        <section id="concienticemos">
+            <div class="subtitulo">
+                <h2>Concienticemos</h2>
+            </div>
+            <div class="concienticemos-contenido">
+                <div class="container_little">
+                    <div class="card">
+                        <figure>
+                            <img src="img/img-cuidemoselplaneta.svg" alt="img-cuidemoselplaneta">
+                        </figure>
+                       <div class="contenido">
+						    <div class="iconos">
+                            <img src="img/icono-corazon.svg" width="28px" height="29px" alt="icono_corazon">
+                            <img src="img/icono-compartir.svg" width="28px" height="29px" alt="icono_compartir">
+                        	</div>
+                            <h4>10 maneras de ayudar a quiénes lo necesitan y a nuestro planeta</h4>
+                            <a href="#">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="img/img-tapasplastico.svg" alt="img-tapasplastico">
+                        </figure>
+                        
+                        <div class="contenido">
+							<div class="iconos">
+                            <img src="img/icono-corazon.svg" width="28px" height="29px" alt="icono_corazon">
+                            <img src="img/icono-compartir.svg" width="28px" height="29px" alt="icono_compartir">
+                        	</div>
+                            <h4>Reciclado tapitas plásticas para la Fundacion Garrahan</h4>
+                            <a href="#">Leer más</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <figure>
+                            <img src="img/img-nodesperdicios.svg" alt="img-nodesperdicios">
+                        </figure>
+                        <div class="contenido">
+							<div class="iconos">
+                            <img src="img/icono-corazon.svg" width="28px" height="29px" alt="icono_corazon">
+                            <img src="img/icono-compartir.svg" width="28px" height="29px" alt="icono_compartir">
+                        	</div>
+                            <h4>Consumo responsable: formas de evitar el desperdicio de alimentos</h4>
+                            <a href="#">Leer más</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container_flip">
+                    <div class="card_father">
+                        <div class="card_great">
+                            <div class="card_front" style="background-image: url(img/img-cardgreat.svg);">
+                                <div class="bg"></div>
+                                <div class="contenido_front">
+                                    <h3>Esto le estamos haciendo a nuestro planeta...</h3>
+                                </div>
+                            </div>
+                            <div class="card_back">
+                                <div class="contenido_back">
+                                    <h3>Primero los datos</h3>
+                                    <p>Unos 1300 millones de toneladas de comida producida para el consumo humano, termina en vertederos.
+                                    Sin embargo, una de cada nueve personas en el mundo sufre de hambre. Contamos algunas iniciativas para
+                                    reducir el desperdicio de alimentos hasta convertirlo en un arma en la lucha por llegar a la meta del
+                                    “Hambre Cero”.</p>
+                                    <a href="#">Leer más</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fundacion">
+            <div class="contenido-fundacion">
+                <h2 class="fundacion-titulo">Colaborá con la fundación</h2>
+                <p>Frente a la emergencia sanitaria miles de chicos y chicas siguen necesitando de los comedores sociales para acceder a un plato de comida. 
+                Necesitamos tu aporte para poder seguir ayudando a estas instituciones.</p>
+                    <ul class="container-fundacion">
+                        <li class="estructura-botones-fundacion">
+                            <div class="cards-fundacion"><img src="img/icono-contribuir.svg" alt="icono-contribuir"></div>
+                            <a class="boton-fundacion" href="contribuir.html">CONTRIBUIR</a>
+                        </li>
+                        <li class="estructura-botones-fundacion">
+                            <div class="cards-fundacion"><img src="img/icono-alimentos.svg" alt="icono-contribuir"></div>
+                            <a class="boton-fundacion" href="#">DONAR ALIMENTOS</a>
+                        </li>
+                        <li class="estructura-botones-fundacion">
+                            <div class="cards-fundacion"><img src="img/icono-añadir-comedor.svg" alt="icono-contribuir"></div>
+                            <a class="boton-fundacion" href="#">AÑADIR MI COMEDOR</a>
+                        </li>
+                        <li class="estructura-botones-fundacion">
+                            <div class="cards-fundacion"><img src="img/icono-voluntario.svg" alt="icono-contribuir"></div>
+                            <a class="boton-fundacion" href="#">SER VOLUNTARIO</a>
+                        </li>			
+                    </ul>
+                </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+			<p class="footer-p">COPYRIGHT 2022 -  ® ALINEAR | TODOS LOS DERECHOS RESERVADOS
+			Seguinos en nuestras redes sociales</p>
+			<div class="footer-img">
+            <img src="img/icono-facebook-blanco.svg" alt="icono-facebook">
+            <img src="img/icono-instagram-blanco.svg" alt="icono-instagram">
+            <img src="img/icono-youtube-blanco.svg" alt="icono-youtube">
+            <img src="img/icono-twitter-blanco.svg" alt="icono-twitter">
+			</div>
+        </div>
+    </footer>
+	<script src="app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDaeWicvigtP9xPv919E-RNoxfvC-Hqik&callback=iniciarMap"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
