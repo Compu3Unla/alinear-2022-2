@@ -1,5 +1,5 @@
 # Grupo Alinear 2do cuatrimestre 2022
-Equipo con temática "Gastronomía". 
+Equipo con temática "Gastronomía". Encuentran la problemática del desecho alimentario por parte de restaurantes y entornos domésticos. Proponen un nexo entre comedores barriales y personas o restaurantes que quieran donar alimentos. También tienen una parte de donaciones económicas.
 
 ## Integrantes
 * Hernandez, Cristian
